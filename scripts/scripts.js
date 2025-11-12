@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "19_gobierno_melilla.png", "20_bomberos_melilla.png", "21_amgevicesa_ceuta.png",
       "22_obimace_ceuta.png", "23_policia_local_melilla.png"
     ],
-    ".logos", "/styles/img/logos/", "logo-img", 1500
+    ".logos", "styles/img/logos/", "logo-img", 1500
   );
 
   //Carrusel de MEDALLAS
   crearCarrusel(
     ["medalla_50.png", "medalla_150.png", "medalla_300.png", "medalla_mes.png"],
-    ".medallas", "/styles/img/medallas/", "medalla-img", 2000
+    ".medallas", "styles/img/medallas/", "medalla-img", 2000
   );
 
   //Carrusel de CARNETS
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "nightcrawler.png", "pinhead.png", "rorschach.png", "ryuk.png", "sandman.png",
       "spiderman.png", "thing.png", "xenomorfo.png", "maul.png", "buzz.png", "terminator.png"
     ],
-    ".carnets_oposito", "/styles/img/carnets/", "carnet-img", 3000
+    ".carnets_oposito", "styles/img/carnets/", "carnet-img", 3000
   );
 });
 
@@ -92,12 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const archivo = nombreAArchivo[nombre];
 
       if (archivo) {
-        mapa.src = `/styles/img/mapas/${archivo}`;
+        mapa.src = `styles/img/mapas/${archivo}`;
       }
     });
 
     enlace.addEventListener("mouseleave", () => {
-      mapa.src = `/styles/img/mapas/mapa_blanco.png`;
+      mapa.src = `styles/img/mapas/mapa_blanco.png`;
     });
   });
 });
