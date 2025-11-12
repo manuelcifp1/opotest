@@ -82,68 +82,68 @@ body.no-snap {
 }
 
 .tarjetas_oposiciones a:nth-child(1) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/01_ingesa.png");
+    background-image: url("styles/img/logos/01_ingesa.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(2) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/02_policia_local_ceuta.png");
+    background-image: url("styles/img/logos/02_policia_local_ceuta.png");
     background-size: cover;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(3) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/05_gobierno_ceuta.png");
+    background-image: url("styles/img/logos/05_gobierno_ceuta.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(4) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/17_bomberos_ceuta.png");
+    background-image: url("styles/img/logos/17_bomberos_ceuta.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(5) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/19_gobierno_melilla.png");
+    background-image: url("styles/img/logos/19_gobierno_melilla.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(6) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/20_bomberos_melilla.png");
+    background-image: url("styles/img/logos/20_bomberos_melilla.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(7) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/21_amgevicesa_ceuta.png");
+    background-image: url("styles/img/logos/21_amgevicesa_ceuta.png");
     background-size: cover;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(8) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/22_obimace_ceuta.png");
+    background-image: url("styles/img/logos/22_obimace_ceuta.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(9) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/23_policia_local_melilla.png");
+    background-image: url("styles/img/logos/23_policia_local_melilla.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .tarjetas_oposiciones a:nth-child(10) .tarjeta_oposicion .escudo {
-    background-image: url("/styles/img/logos/16_correos.png");
+    background-image: url("styles/img/logos/16_correos.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
