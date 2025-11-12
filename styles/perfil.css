@@ -1,0 +1,391 @@
+/*PÁGINA PERFIL=====================================================================*/
+.perfil_main {      
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    display: flex;
+    flex-direction: column;        
+}
+
+.persona {
+    height: 95vh;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--naranja_principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;  
+}
+
+.medallero {
+    height: 90vh;
+    overflow-y: auto;    
+}
+
+.cuadro {  
+    box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);
+    border-radius: 1em;
+}
+
+.cuadro h3 {
+    padding: 1em;
+    text-align: center;  
+}
+
+.cuadro p {
+    padding: 1em;
+}
+
+.palabras {
+    width: 28vw;
+    height: 46vh;  
+    padding-left: 1em;
+    padding-right: 1.5em;
+    border: 4px solid var(--naranja_principal);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.identificacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+  
+}
+
+.carnets_oposito {   
+    height: 46vh;    
+    border: 10px var(--naranja_principal) ridge;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.carnet-img {
+    width: 80%;
+    height: 73%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: carnetFade 1.5s linear forwards;
+}
+
+.cifras {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+}
+
+.consulta_estadisticas {
+    height: 46.5vh;
+    border-radius: 100%;
+    animation: pantallaGlow 2s ease-in-out infinite;
+}
+
+@keyframes pantallaGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+.cuadro_medallas {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    width: 38vw;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);
+    border-radius: 1em;
+    border: 4px solid var(--naranja_principal);
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(4, 1fr); /* EXACTAMENTE 4 columnas */
+    grid-auto-rows: 1fr; /* Las filas crecen igual que las columnas */
+    aspect-ratio: auto;
+    margin: 0 auto;
+    padding: 15px;     
+}
+
+.una_medalla {
+  aspect-ratio: 1 / 1;  /* cada celda será cuadrada */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;  
+}
+
+
+.perfil_main h1 {
+    color: var(--naranja_principal);
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*MEDIA QUERY=================================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+    h1 {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+  
+  .datos {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .identificacion, .cifras {
+    flex-direction: column;
+  }
+
+  .palabras {
+    width: 90vw;
+    font-size: 0.6em;
+    height: 33vh;
+    margin-bottom: 60px;
+    padding-left: 0.1em;
+  }
+
+  .carnets_oposito {
+    height: 26.9vh;
+    width: 90vw;    
+  }
+
+  .carnets_oposito img {
+    width: 100%;
+    height: auto;
+  }
+
+  .consulta_estadisticas {
+    height: 33vh;
+    margin-bottom: 45px;
+    margin-top: 30px;
+  }  
+
+  .medallero {
+    justify-content: center;
+  }
+
+  .medallero h1 {
+    margin-top: 0px;
+  }
+
+  .cuadro_medallas {
+    width: 90vw;    
+  }
+
+}
+
+/*Tablets pequeñas (481px a 767px)*/
+@media screen  and (min-width: 481px) and (max-width: 767px) {
+    h1 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    margin-top: 140px;
+    }
+  
+    .datos {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .identificacion, .cifras {
+        flex-direction: column;
+    }
+
+    .palabras {
+        width: 90vw;
+        font-size: 0.8em;
+        height: 37vh;
+        margin-bottom: 60px;
+        padding-left: 0.1em;
+    }
+
+    .carnets_oposito {
+        height: 36.7vh;
+        width: 90vw;    
+    }
+
+    .carnets_oposito img {
+        width: 100%;
+        height: auto;
+    }
+
+    .consulta_estadisticas {
+        height: 33vh;
+        margin-bottom: 45px;
+        margin-top: 30px;
+    }  
+
+    .medallero {
+        justify-content: center;
+    }
+
+    .medallero h1 {
+        margin-top: 0px;
+    }
+
+    .cuadro_medallas {
+        width: 90vw;        
+    }
+
+}
+
+
+/*Tablets grandes y laptops (768px a 1199px)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 100px;    
+    }
+  
+    .datos {
+        justify-content: center;
+        align-items: center;        
+    } 
+
+    .persona {
+        width: 100vw;
+    }
+    
+    .identificacion {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .palabras {
+        width: 47vw;
+        font-size: 0.8em;
+        height: 43vh;                
+    }
+
+    .cuadro p {
+        padding: 0.4em;
+    }
+
+    .carnets_oposito {
+        height: 43vh;
+        width: 43.7vw;    
+    }
+
+    .carnets_oposito img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cifras {
+        width: 100%;
+    }
+
+    .consulta_estadisticas {
+        height: 45vh;
+        margin-bottom: 45px;
+        margin-top: 30px;
+    }  
+
+    .medallero {
+        justify-content: center;
+    }
+
+    .medallero h1 {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .cuadro_medallas {
+        width: 84vw;        
+    }
+
+}
+
+
+/*Laptops grandes y escritorios (de 1200px a 1999px)=====================================*/
+/* Ajustes específicos para portátiles modernos (el mío) */
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+    
+    .datos h1 {
+        margin-top: 2em;
+
+    }
+    
+    .carnets_oposito {
+        height: 41.6vh;
+        width: 39.8vw;
+    }
+    
+    .palabras {
+        width: 40vw;
+        height: 41.7vh;        
+    }
+
+    .cuadro {
+        margin-right: 5em;
+    }
+
+    .cuadro p {
+        padding: 0.5em;                
+    }
+    
+    .cuadro h3 {
+        padding: 0.5em;
+    }
+
+    .carnet-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;        
+    }
+
+    .cifras {
+        gap: 3em;
+        width: 87vw;
+    }
+
+    .consulta_estadisticas {
+        margin-left: 4em;
+    }
+
+    .medallero {
+    justify-content: flex-start;
+    padding-top: 2em;
+    height: 90vh;
+  }
+
+  .medallero h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+  }
+
+  .cuadro_medallas {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,241 @@
+/*PÁGINA BIENVENIDO A OPOTEST SUSCRIPTOR===========================================================================*/
+.jubiloso {
+    width: 60vh;
+    animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
+                vibra_logo 1s ease-in-out 1.5s 1 normal none,
+                aura_logo 1s ease-in-out 2.5s 1 normal none;
+    margin-left: 24em;
+}
+
+.familia {
+    height: 95vh;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instrucciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    position:relative;
+    box-sizing: border-box;
+    margin-right: 8em;
+}
+
+.card-carousel {  
+    width: 90vw;
+    max-width: 60rem;
+    min-height: 30vh;
+    padding: 0.8em 2em;
+    border: 4px solid var(--naranja_principal);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    color: var(--naranja_filo_brillo_logo);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8em;
+    border-radius: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);  
+}
+
+.card-container {  
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.card {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);  
+}
+
+.card.active {
+    display: flex;
+    opacity: 1;  
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8em;
+    color: var(--naranja_filo_brillo_logo);
+    cursor: pointer;
+    z-index: 5;
+    user-select: none;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);    
+}
+
+.left-arrow {
+    left: 0.2em;    
+}
+
+.right-arrow {
+    right: 0.2em;  
+}
+
+.perfil-btn {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 9em;
+    padding: 0.5em 1em;
+    background-color: var(--naranja_filo_brillo_logo);
+    color: var(--azul_principal);
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+}
+
+.perfil-btn:hover {
+    background-color: var(--naranja_sombra_logo);
+    color: white;
+}
+
+/*MEDIA QUERY=========================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+    .familia {
+    flex-direction: column;
+    justify-content: center;        
+  }
+
+  .jubiloso {
+    width: 32vh;
+    margin-left: 0em;
+    margin-top: 8em;
+  }
+
+  .card-carousel {
+    font-size: 1.22em;
+  }
+
+  .instrucciones {
+    margin-right: 0em;
+  }
+
+  .nav-arrow {
+    pointer-events: none; /* no clickeable */
+    opacity: 0.4; /* más apagadas visualmente */
+    cursor: default;
+  }
+
+}
+
+/*Tablets pequeñas (481px a 767px)*/
+@media screen  and (min-width: 481px) and (max-width: 767px) {
+    .familia {
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .jubiloso {
+        width: 37vh;
+        margin-left: 0em;
+        margin-top: 8em;
+    }
+
+    .card-carousel {
+        font-size: 1.5em;
+    }
+
+    .instrucciones {
+        margin-right: 0em;
+    }
+
+    .nav-arrow {
+        pointer-events: none; /* no clickeable */
+        opacity: 0.4; /* más apagadas visualmente */
+        cursor: default;
+    }
+
+}
+
+/*Tablets grandes y laptops (768px a 1199px)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .jubiloso {
+        width: 53vh;
+        margin-left: 0em;
+        margin-top: 8em;
+    }
+
+    .card-carousel {
+        font-size: 1.5em;
+        margin-right: 1em;
+        max-width: 45rem;
+    }
+
+    .instrucciones {
+        margin-right: 0em;
+        margin-top: 5em;
+    }
+
+    .nav-arrow {
+        pointer-events: none; /* no clickeable */
+        opacity: 0.4; /* más apagadas visualmente */
+        cursor: default;
+    }
+
+}
+
+/*Laptops grandes y escritorios (de 1200px a 1999px)=======================================*/
+/* Ajustes específicos para portátiles modernos (el mío) */
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+    .familia {
+    height: auto; /* permite crecer verticalmente si hace falta */
+    min-height: 95vh;
+    padding: 2em 5em;
+    gap: 6em;
+  }
+
+  .instrucciones {
+    width: 45vw;
+    padding: 2em;
+  }
+
+  .card-carousel {
+    width: 100%;
+    max-width: none;
+  }
+
+  .jubiloso {
+    width: 33vw;
+    height: 90vh;
+    height: auto;
+    max-height: 70vh; /* lo deja escalar pero evita que se pase */
+    margin: 0;
+    align-self: flex-start; /* para evitar que quede encajado por align-items */
+    margin-top: 10em;
+  }
+}

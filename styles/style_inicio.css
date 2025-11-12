@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul_principal: #3d36ca;
+    --naranja_principal: #fe8525;
+    --naranja_sombra_logo: #f55d04;
+    --naranja_filo_brillo_logo: #fec564;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja_principal);
+    pointer-events: none;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja_principal);
+    pointer-events: none;
+}
+
+.azul {           
+    background: linear-gradient(90deg, #3d36ca, #524bcc, #635ecc, #524bcc, #3d36ca);
+    align-items: center;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;     
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(2, 2, 2, 0.5);
+       
+}
+
+.logo {
+    height: 110%;    
+    margin-left: 2%;    
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
+}
+
+i {
+    color: var(--naranja_principal);    
+}
+
+.fa-right-to-bracket {
+    margin-left: 82%;    
+    font-size: 139%;
+}
+
+/* Posicionar el menú hamburguesa en la esquina
+ superior derecha */
+.contenedor_icono_burger {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    width: 52px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;    
+}
+
+/* Líneas del menú hamburguesa */
+.linea-superior, .linea-intermedia, .linea-inferior {
+    width: 29px;
+    height: 5px;
+    background: var(--naranja_principal);
+    border-radius: 100px;
+    position: absolute;    
+    transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+    border:none;
+    z-index: 10;
+}
+
+/*Posicionar las líneas del menú hamburguesa */
+.linea-superior {
+    top: 12px;
+    transform-origin: right;/*Esta propiedad en 
+    cada una de las líneas que giran establece
+    sobre que punto rotarán.*/
+}
+
+.linea-intermedia {
+    top: 22px;
+    opacity: 1;
+}
+
+.linea-inferior {
+    top: 32px;
+    transform-origin: right;
+}
+
+/*Círculo para la "X", oculto hasta el click.*/
+.contenedor_icono_burger::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border: 3px solid var(--naranja_principal);
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 50%;    
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+/*Esto hace que el círculo que contiene la X aparezca
+cuando el menú burguer cambia a X. */
+.contenedor_icono_burger.icono_cruz::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;    
+}
+
+/* Animaciones para las líneas y transiciones para las líneas burguer.*/
+.contenedor_icono_burger.icono_cruz .linea-superior {
+    transform: translate(-50%, 0) rotate(585deg); /* Centrar y rotar */
+    background-color: var(--naranja_principal);
+    top: 13px;    
+}
+
+.contenedor_icono_burger.icono_cruz .linea-inferior {
+    transform: translate(-50%, 0) rotate(-585deg);
+    background-color: var(--naranja_principal);
+    top: 33px;    
+}
+
+.contenedor_icono_burger.icono_cruz .linea-intermedia {
+    opacity: 0; /*Desaparece la línea intermedia.*/
+    transform: translateX(-50px);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/*Contenedores inicialmente ocultos con poema
+y menú.*/
+#contenedor_oposito, #contenedor_menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;    
+    overflow: hidden;    
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+#contenedor_oposito {
+    left: 0;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;    
+    width: 40%;
+    padding-top: 40px; 
+    display: flex;      
+}
+
+#mapa_ccaa {
+  border: var(--azul_principal) 4px ridge;  
+}
+
+.oposito_menu {
+    height: 55%;
+}
+
+#contenedor_menu {
+    right: 0;
+    left: auto;
+    background-image: url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    transform: translateX(100%);
+    width: 60%;
+    padding-top: 8% 10% 4%;
+}
+
+/* Cuando están visibles */
+#contenedor_oposito.visible, #contenedor_menu.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Menú dentro del contenedor */
+#contenedor_menu {
+  display: flex;
+  flex-direction: column;    
+}
+
+#contenedor_menu ul {
+    list-style: none;
+    text-align: center;    
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4%;
+  color: var(--naranja_principal);  
+}
+
+.titulo {
+  font-size: 3em;
+}
+
+.encabezado_menu {
+  font-family: "Lexend", sans-serif;
+  text-align: center;
+  color: var(--naranja_principal);
+  text-shadow: 
+    1px 1px 2px black,
+    -1px 1px 2px black,
+    1px -1px 2px black,
+    -1px -1px 2px black;  
+}
+
+.ceuta_melilla {  
+  text-decoration: none;
+  transition: color 0.3s ease;  
+  font-size: 1.7em;
+  font-weight:500;
+  margin-top: 17%;
+}
+
+.ceuta_melilla:hover {
+    border: var(--naranja_principal) 2px solid;
+    padding: 3px 7px;
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 5px;
+}
+
+.contenedor_listas {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;  
+}
+
+#contenedor_menu ul li {
+    margin: 20px 0;
+    font-family: "Lexend", sans-serif;
+    font-size: 1.1em;    
+}
+
+#contenedor_menu ul li a {
+    text-decoration: none;    
+    transition: color 0.3s ease;
+    color: var(--naranja_principal);
+    font-size: 1.7em;
+    font-weight:500;
+    text-shadow: 
+    1px 1px 2px black,
+    -1px 1px 2px black,
+    1px -1px 2px black,
+    -1px -1px 2px black;
+}
+
+#contenedor_menu ul li a:hover {
+    border: var(--naranja_principal) 2px solid;
+    padding: 3px 3px;
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 5px;
+}
+
+.llegada {
+    width: 100vw;
+    height: 100vh;
+    display: flex;    
+    background-image: url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 100px; 
+    scroll-snap-align: end;
+    scroll-snap-stop: always;  
+}
+
+.superlogo {
+    width: 40%;    
+    margin-top: 8%;
+    margin-left: 30%;
+    margin-right: 9%;    
+    animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
+               vibra_logo 1s ease-in-out 1.5s 1 normal none,
+               aura_logo 1s ease-in-out 2.5s 1 normal none;     
+}
+
+@keyframes rotacion_logo {
+    0% {
+        transform: rotate(90deg) scale(0); /* Rotado verticalmente y sin tamaño */
+    }    
+    100% {
+        transform: rotate(0deg) scale(1); /* Termina horizontal y a tamaño completo */
+        
+    }    
+}
+
+@keyframes vibra_logo {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-15px); }
+  20% { transform: translateX(15px); }
+  30% { transform: translateX(-15px); }
+  40% { transform: translateX(15px); }
+  50% { transform: translateX(-15px); }
+  60% { transform: translateX(15px); }
+  70% { transform: translateX(-15px); }
+  80% { transform: translateX(15px); }
+  90% { transform: translateX(-15px); }
+  100% { transform: translateX(0);}
+}
+
+@keyframes aura_logo {
+  0%   { filter: drop-shadow(0 0 0 white); }
+  25%  { filter: drop-shadow(0 0 20px black); }
+  50%  { filter: drop-shadow(0 0 20px white); }
+  75%  { filter: drop-shadow(0 0 20px black); }
+  100% { filter: drop-shadow(0 0 0 white); }
+}
+
+.abajo {
+    height: 40vh;
+    margin-top: 26%;
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: subir_abajo 1s ease-out 2.5s forwards;    
+}
+
+@keyframes subir_abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.odd, .even {
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    scroll-snap-align: end; /* 🔽 El borde inferior se alinea */
+    scroll-snap-stop: always;
+}
+
+.logos {
+    height: 60%;
+    margin-top: 3%;
+    aspect-ratio: 1/1;
+    border: 10px var(--azul_principal) ridge;    
+    border-radius: 200%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: logoFade 1.5s linear forwards;
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.saludo {
+    height: 70%;   
+    margin-left: 10%;
+    margin-top: 4%;    
+}
+
+.banderita {
+    height: 70%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.podium {
+    height: 72%;
+    margin-top: 3%;
+    margin-left: 15%;   
+}
+
+.informatico {
+    height: 72%;
+    margin-top: 3%;
+    margin-left: 15%;   
+}
+
+.videoai {
+  width: 30%;
+  margin-top: 1%;
+  margin-left: 1%;  
+  filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
+}
+
+.menuvideo {
+  width: 70%;
+  margin-left: 15%;
+  filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
+}
+
+.adios {
+    height: 72%;
+    margin-top: 3%;
+    margin-left: 15%;   
+}
+
+.medallas {
+    height: 73%;
+    aspect-ratio: 1/1;    
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes medallaFadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    filter: none;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+    filter: drop-shadow(0 0 40px white);
+  }
+  40% {
+    filter: drop-shadow(0 0 60px black);
+  }
+  60% {
+    filter: drop-shadow(0 0 60px white);
+  }
+  80% {
+    filter: drop-shadow(0 0 60px black);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+.medalla-img {
+  width: 100%;    
+  transform: translate(-50%, -50%);
+  animation: medallaFadeIn 5s linear forwards;
+  pointer-events: none;
+}
+
+.star_register {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative; /* necesario para posicionar el círculo interior */
+  overflow: visible;
+  width: 20%;
+  aspect-ratio: 1/1;    
+  background-color: var(--azul_principal);
+  animation: zoomLoop 4s ease-in-out infinite;    
+}
+
+.star_register::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 3px solid var(--naranja_sombra_logo);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@keyframes zoomLoop {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px 2px var(--naranja_sombra_logo), 0 0 12px 4px var(--naranja_filo_brillo_logo);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px 2px var(--naranja_sombra_logo), 0 0 12px 4px var(--naranja_filo_brillo_logo);
+  }
+}
+
+.reg {
+  color: var(--naranja_principal);  
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
+  animation: palpitaciones 2.5s ease-in-out infinite;
+}
+
+@keyframes palpitaciones {
+    0% {
+        color: var(--naranja_sombra_logo);
+        text-shadow: 2px 2px 2px var(--naranja_filo_brillo_logo),
+        -2px -2px 2px var(--naranja_filo_brillo_logo),
+        -2px 2px 2px var(--naranja_filo_brillo_logo),
+        2px -2px 2px var(--naranja_filo_brillo_logo);
+    }
+
+    50% {
+        color: var(--naranja_filo_brillo_logo);
+        text-shadow: 2px 2px 2px var(--naranja_sombra_logo),
+        -2px -2px 2px var(--naranja_sombra_logo),
+        -2px 2px 2px var(--naranja_sombra_logo),
+        2px -2px 2px var(--naranja_sombra_logo);
+        word-spacing: 10px;
+        letter-spacing: 3px;
+    }
+
+    100% {
+        color: var(--naranja_sombra_logo);
+        text-shadow: 2px 2px 2px var(--naranja_filo_brillo_logo),
+        -2px -2px 2px var(--naranja_filo_brillo_logo),
+        -2px 2px 2px var(--naranja_filo_brillo_logo),
+        2px -2px 2px var(--naranja_filo_brillo_logo);
+    }
+}
+
+footer {
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 92vh;
+    left: 0;
+    display: flex;
+    z-index: 1000;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    
+}
+
+.brands {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    font-size: 180%;
+}
+
+.autor {
+    display: flex;
+    margin-left: 75%;   
+    width: 15%;
+}
+
+.nombre {
+    color: var(--naranja_principal);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 5px;
+    font-size: 20px;    
+}
+

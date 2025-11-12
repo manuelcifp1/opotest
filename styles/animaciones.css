@@ -1,0 +1,187 @@
+/*Logo homepage===============================================================*/
+@keyframes rotacion_logo {
+    0% {
+        transform: rotate(1080deg) scale(0);
+    }    
+    100% {
+        transform: rotate(0deg) scale(1);       
+    }    
+}
+
+@keyframes vibra_logo {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-15px); }
+    20% { transform: translateX(15px); }
+    30% { transform: translateX(-15px); }
+    40% { transform: translateX(15px); }
+    50% { transform: translateX(-15px); }
+    60% { transform: translateX(15px); }
+    70% { transform: translateX(-15px); }
+    80% { transform: translateX(15px); }
+    90% { transform: translateX(-15px); }
+    100% { transform: translateX(0);}
+}
+
+@keyframes aura_logo {
+    0%   { filter: drop-shadow(0 0 0 white); }
+    25%  { filter: drop-shadow(0 0 20px black); }
+    50%  { filter: drop-shadow(0 0 20px white); }
+    75%  { filter: drop-shadow(0 0 20px black); }
+    100% { filter: drop-shadow(0 0 0 white); }
+}
+
+/*Oposito abajo=====================================================================*/
+@keyframes subir_abajo {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+        margin-top: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Logos organismos oficiales==========================================================*/
+@keyframes logoFade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*Medallas explicación==================================================================*/
+@keyframes medallaFadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        filter: none;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+        
+    }  
+    
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        filter: none;
+    }
+}
+
+/*Círculo registro======================================================================*/
+@keyframes palpitacionesAzul {
+    0% {
+        color: var(--azul_principal);
+        text-shadow:
+        2px 2px 2px #a3b9ff,
+        -2px -2px 2px #a3b9ff,
+        -2px 2px 2px #a3b9ff,
+        2px -2px 2px #a3b9ff;
+    }
+
+    50% {
+        color: #a3b9ff;
+        text-shadow:
+        2px 2px 2px var(--azul_principal),
+        -2px -2px 2px var(--azul_principal),
+        -2px 2px 2px var(--azul_principal),
+        2px -2px 2px var(--azul_principal);
+        word-spacing: 10px;
+        letter-spacing: 3px;
+    }
+
+    100% {
+        color: var(--azul_principal);
+        text-shadow:
+        2px 2px 2px #a3b9ff,
+        -2px -2px 2px #a3b9ff,
+        -2px 2px 2px #a3b9ff,
+        2px -2px 2px #a3b9ff;
+    }
+}
+
+@keyframes zoomLoop {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px 2px var(--naranja_sombra_logo), 0 0 12px 4px var(--naranja_filo_brillo_logo);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px 2px var(--naranja_sombra_logo), 0 0 12px 4px var(--naranja_filo_brillo_logo);
+    }
+}
+
+@keyframes palpitaciones {
+    0% {
+        color: var(--naranja_sombra_logo);
+        text-shadow: 2px 2px 2px var(--naranja_filo_brillo_logo),
+        -2px -2px 2px var(--naranja_filo_brillo_logo),
+        -2px 2px 2px var(--naranja_filo_brillo_logo),
+        2px -2px 2px var(--naranja_filo_brillo_logo);
+    }
+
+    50% {
+        color: var(--naranja_filo_brillo_logo);
+        text-shadow: 2px 2px 2px var(--naranja_sombra_logo),
+        -2px -2px 2px var(--naranja_sombra_logo),
+        -2px 2px 2px var(--naranja_sombra_logo),
+        2px -2px 2px var(--naranja_sombra_logo);
+        word-spacing: 10px;
+        letter-spacing: 3px;
+    }
+
+    100% {
+        color: var(--naranja_sombra_logo);
+        text-shadow: 2px 2px 2px var(--naranja_filo_brillo_logo),
+        -2px -2px 2px var(--naranja_filo_brillo_logo),
+        -2px 2px 2px var(--naranja_filo_brillo_logo),
+        2px -2px 2px var(--naranja_filo_brillo_logo);
+    }
+}
+
+/*Enlace al registro bajo el login*/
+@keyframes cambio-color {
+    0% {
+        color: #3d36ca;
+        text-shadow: 0 0 5px #fe8525, 0 0 10px #fe8525, 0 0 15px #fe8525;
+    }
+    100% {
+        color: #fe8525;
+        text-shadow: 0 0 5px #3d36ca, 0 0 10px #3d36ca, 0 0 15px #3d36ca;
+    }
+}
+
+/*Carnets Oposito=======================================================================*/
+@keyframes carnetFade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+

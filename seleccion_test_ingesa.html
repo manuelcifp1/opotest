@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Selección test Opotest">
+    <meta name="author" content="Manuel Alba">
+    <meta name="keywords" content="test, oposiciones, proyecto, negocio, educación, estudio">
+    <script src="https://kit.fontawesome.com/b8bf76e9d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" title="style">
+    <script src="scripts/scripts.js" defer></script>    
+    <title>Opotest selección test</title>
+</head>
+
+<body class="diferente">
+
+    <header>
+
+        <a href="index.html"><img class="logo" src="/styles/img/logo_opotest.png" alt="logo opotest"></a>
+
+        <div class="login_menu">            
+            <a class="fa-right-to-bracket" href="login.html" target="_blank"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a class="fa-user" href="perfil.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+
+            <div class="contenedor_icono_burger icono_barras">            
+                <hr class="linea-superior">
+                <hr class="linea-intermedia">
+                <hr class="linea-inferior">            
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="formulario_test">
+
+            <h3 class="titulo_seleccion_test">INGESA</h3>
+
+            <form class="registrate" id="formulario_test" action="#" method="post">
+                <!-- CATEGORÍA -->
+                <fieldset class="fieldset">
+                    <legend>CATEGORÍA:</legend>
+                    <select name="categoria" id="categoria">
+                    <option value="auxiliar_administrativo">Auxiliar Administrativo</option>
+                    </select>
+                </fieldset>
+
+                <!-- Nº DE PREGUNTAS -->
+                <fieldset class="fieldset">
+                    <legend>Nº DE PREGUNTAS DEL TEST:</legend>
+                    <div class="radio-grid">
+                        <label><input type="radio" name="numPreguntas" value="50"> 50</label>
+                        <label><input type="radio" name="numPreguntas" value="100"> 100</label>
+                        <label><input type="radio" name="numPreguntas" value="150"> 150</label>
+                    </div>
+                </fieldset>
+
+                <!-- TEMAS -->
+                <fieldset class="fieldset">
+                    <legend>TEMAS:</legend>
+                    <select id="temas" name="temas">
+                    <option value="todos">Todos los temas</option>
+                    <option value="personalizados">Los que tú quieras</option>
+                    </select>
+                </fieldset>
+
+                <!-- CHECKBOXES DE TEMAS (se oculta por defecto con JS) -->
+                <fieldset class="fieldset" id="temas_personalizados_fieldset" style="display: none;">
+                    <legend>Selecciona los temas:</legend>
+                    <div id="checkboxContainer" class="checkbox-grid"></div>
+                </fieldset>
+
+                <!-- BOTÓN -->
+                <input type="submit" value="EMPEZAR TEST">
+
+            </form>
+
+            
+        </section>
+
+<!--Aquí el código del mapa y el menú retráctil-->
+        <div id="contenedor_oposito" class="oculto">
+            <img id="mapa_ccaa" src="/styles/img/mapas/mapa_blanco.png" alt="Mapa de Comunidades Autónomas" class="oposito_menu">
+        </div>
+
+        <div id="contenedor_menu" class="oculto">        
+            <div class="encabezado">
+                <h1 class="encabezado_menu titulo">TESTS</h1>          
+                <a class="encabezado_menu ceuta_melilla" href="seleccion_oposicion_ceuta_melilla.html" target="_blank">Ceuta y Melilla</a>
+            </div>
+            <div class="contenedor_listas">
+
+                <div class="lista uno">
+                    <ul>    
+                        <li><a href="javascript:void(0)" target="_blank">Andalucía</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Aragón</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Baleares</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Canarias</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Cantabria</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Castilla La Mancha</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Castilla y León</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Cataluña</a></li>
+                    </ul>
+                </div>
+
+                <div class="lista dos">
+                    <ul>    
+                        <li><a href="javascript:void(0)" target="_blank">Comunidad de Madrid</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Comunidad Valenciana</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Extremadura</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Galicia</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">La Rioja</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Murcia</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Navarra</a></li>
+                        <li><a href="javascript:void(0)" target="_blank">País Vasco</a></li>
+                    </ul>                    
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="foot snapping diferente">
+
+        <div class="brands">            
+                <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+        </div>
+
+        <div class="autor">
+
+                <i class="fa-regular fa-copyright"><span class="nombre">Manuel Alba</span></i>
+        </div>
+
+    </footer>   
+    
+</body>
+</html>

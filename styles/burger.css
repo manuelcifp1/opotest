@@ -1,0 +1,81 @@
+/*BURGER MENU==========================================================================*/
+/* Posicionar el menú hamburguesa en la esquina superior derecha */
+.contenedor_icono_burger {
+    position: absolute;
+    top: 24%;
+    right: 1em;
+    width: 52px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;    
+}
+
+/* Líneas del menú hamburguesa */
+.linea-superior, .linea-intermedia, .linea-inferior {
+    width: 29px;
+    height: 5px;
+    background: var(--naranja_principal);
+    border-radius: 100px;
+    position: absolute;    
+    transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+    border:none;
+    z-index: 10;
+}
+
+/*Posicionar las líneas del menú hamburguesa */
+.linea-superior {
+    top: 12px;
+    transform-origin: right;/*Esta propiedad en 
+    cada una de las líneas que giran establece
+    sobre que punto rotarán.*/
+}
+
+.linea-intermedia {
+    top: 22px;
+    opacity: 1;
+}
+
+.linea-inferior {
+    top: 32px;
+    transform-origin: right;
+}
+
+/*Círculo para la "X", oculto hasta el click.*/
+.contenedor_icono_burger::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    border: 3px solid var(--naranja_principal);
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 50%;    
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+/*Esto hace que el círculo que contiene la X aparezca
+cuando el menú burguer cambia a X. */
+.contenedor_icono_burger.icono_cruz::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;    
+}
+
+/* Animaciones para las líneas y transiciones para las líneas burguer.*/
+.contenedor_icono_burger.icono_cruz .linea-superior {
+    transform: translate(-50%, 0) rotate(585deg); /* Centrar y rotar */
+    background-color: var(--naranja_principal);
+    top: 13px;    
+}
+
+.contenedor_icono_burger.icono_cruz .linea-inferior {
+    transform: translate(-50%, 0) rotate(-585deg);
+    background-color: var(--naranja_principal);
+    top: 33px;    
+}
+
+.contenedor_icono_burger.icono_cruz .linea-intermedia {
+    opacity: 0; /*Desaparece la línea intermedia.*/
+    transform: translateX(-50px);
+}

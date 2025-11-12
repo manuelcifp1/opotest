@@ -1,0 +1,138 @@
+/*PÁGINA SELECCION_TEST===================================================================*/
+.formulario_test {
+    min-height: 95vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+.titulo_seleccion_test {
+    font-family: 'Lexend', sans-serif;
+    color: var(--azul_principal);
+    font-size: 3em;    
+    margin-top: 2em;
+    background-color: var(--naranja_filo_brillo_logo);
+    padding: 5px;
+    border: solid 3px var(--azul_principal);
+    border-radius: 5%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 3);
+}
+
+.registrate {
+    border: solid 5px var(--azul_principal);
+    background-color: var(--naranja_principal);
+    border-radius: 2%;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+fieldset {    
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+legend {
+    background-color: white;
+    padding: 0.2em;
+    border: solid 5px var(--azul_principal);
+    border-radius: 5%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    font-size: 0.23em;
+    accent-color: turquoise;
+
+}
+
+.registrate select {
+    width: 15em;
+    height: 1.8em;
+    border: solid 5px var(--azul_principal);    
+    padding: 0;
+    background-color: white;
+}
+
+.registrate select {
+    font-size: 0.8em;
+}
+
+/*Grid para alinear los radios*/
+.radio-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6em;
+  margin-top: 0.5em;
+}
+
+.radio-grid label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1em;
+  color: var(--azul_principal);
+}
+
+/* Grid de 4 columnas para los checkboxes */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.4em;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.formulario_test input[type="submit"] {
+    width: 5.5em;
+    background-color: var(--naranja_filo_brillo_logo);
+    cursor: pointer;    
+}
+
+.formulario_test input[type="submit"]:hover {
+    background-color: var(--azul_principal);
+    border-color: var(--naranja_filo_brillo_logo);
+    color: var(--naranja_sombra_logo)
+}
+
+.diferente {
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+}
+
+body.diferente {
+    scroll-snap-type: none !important;
+}
+
+/*MEDIA QUERY=========================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+
+    fieldset[id="temas_personalizados_fieldset"] {
+        width: 95% !important;
+        overflow-x: hidden;
+    }
+
+    legend {
+        font-size: 0.8em;
+    }
+    
+}
+
+
+

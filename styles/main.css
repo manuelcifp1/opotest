@@ -1,0 +1,986 @@
+@import url("animaciones.css");
+@import url("burger.css");
+@import url("mapa_menu.css");
+@import url("registro_login.css");
+@import url("bienvenido_suscriptor.css");
+@import url("perfil.css");
+@import url("seleccion_test_ingesa.css");
+@import url("seleccion_oposicion_ceuta_melilla.css");
+@import url("tarjeta_test.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --azul_principal: #3d36ca;
+    --naranja_principal: #fe8525;
+    --naranja_sombra_logo: #f55d04;
+    --naranja_filo_brillo_logo: #fec564;
+}
+
+html, body {
+    height: 100%;        
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;    
+}
+
+/*HEADER========================================================================================================*/
+header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(90deg, #3d36ca, #524bcc, #635ecc, #524bcc, #3d36ca);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;     
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(2, 2, 2, 0.5);       
+}
+
+/*Línea naranja header*/
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja_principal);
+    pointer-events: none;
+}
+
+.logo {
+    height: 8.4em;
+    width: auto;    
+    margin-left: 0em;
+    margin-top: 0.7em;    
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
+}
+
+i {
+    color: var(--naranja_principal);    
+}
+
+.login_menu {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-right-to-bracket {            
+    position:absolute;
+    top: 30%;
+    right: 2.8em ;
+    font-size: 1.4em;        
+}
+
+.fa-user {
+    position: absolute;
+    top: 30%;
+    right: 1.8em ;
+    font-size: 1.4em;
+}
+
+/*INDEX - COMÚN A TODAS LAS SECCIONES==========================================================================*/
+.odd, .even {
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;        
+}
+
+.ultima {
+    height: 95vh;
+}
+
+.snapping {
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+}
+
+/*INDEX - PRIMERA SECCIÓN=================================================================================*/
+.llegada {    
+    width: 100%;
+    height: 100vh;    
+    display: flex;    
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    border-bottom: 1.5em solid var(--azul_principal);
+    scroll-snap-align: end; /* o end, como prefieras */
+    scroll-snap-stop: always;       
+}
+
+.superlogo {
+    height: 60em;        
+    margin: 0 auto;
+    margin-top: 8%;       
+    animation: rotacion_logo 1.2s ease-in-out 0s 1 normal none,
+               vibra_logo 1s ease-in-out 1.5s 1 normal none,
+               aura_logo 1s ease-in-out 2.5s 1 normal none;     
+}
+
+.abajo {    
+    height: 30em;       
+    margin-top: 30%;
+    margin-right: 5%;    
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: subir_abajo 1s ease-out 2.5s forwards;    
+}
+
+/*INDEX - SEGUNDA SECCIÓN===========================================================================*/
+.saludo {
+    width: 35%;           
+    margin-left: 10%;
+    margin-top: 4%;    
+}
+
+.logos {
+    height: 60%;
+    margin-top: 3%;
+    aspect-ratio: 1/1;
+    border: 10px var(--azul_principal) ridge;    
+    border-radius: 200%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoFade 1.5s linear forwards;
+}
+
+/*INDEX - TERCERA SECCIÓN====================================================================*/
+.banderita {
+    height: 65%;
+    margin-top: 5%;
+    margin-right: 9em;
+}
+
+.menuvideo {
+    width: 70%;
+    margin-left: 15em;
+    filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
+}
+
+/*INDEX - CUARTA SECCIÓN==========================================================================*/
+.podium {
+    height: 72%;
+    margin-top: 3em;
+    margin-left: 15%;   
+}
+
+.medallas {
+    height: 73%;
+    width: 73%;
+    margin-top: 10em;
+    position: relative;
+    overflow: hidden;
+}
+
+.medalla-img {
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 2%;
+    left: 0.7%;
+    transform: translate(-50%, -50%);
+    animation: medallaFadeIn 5s linear forwards;
+    pointer-events: none;
+}
+
+/*INDEX - QUINTA SECCIÓN=================================================================================*/
+.videoai {
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 7%;  
+    filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
+}
+
+.informatico {
+    height: 72%;
+    margin-top: 3%;
+    margin-left: 8%;   
+}
+
+/*INDEX - SEXTA SECCIÓN==============================================================================*/
+.adios {
+    height: 75%;
+    margin-top: 5em;
+    margin-left: 15%;   
+}
+
+.star_register {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    overflow: visible;
+    width: 22%;
+    aspect-ratio: 1/1;    
+    background-color: var(--azul_principal);
+    animation: zoomLoop 4s ease-in-out infinite;    
+}
+
+.star_register:hover {
+    background-color: var(--naranja_sombra_logo);
+    animation: palpitacionesAzul 1.5s infinite;  
+}
+
+.reg:hover {
+    color: white;
+}
+
+.star_register::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 3px solid var(--naranja_sombra_logo);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.star_register:hover::after {
+    border: 5px solid var(--azul_principal);  
+}
+
+.reg {
+    color: var(--naranja_principal);  
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    animation: palpitaciones 2.5s ease-in-out infinite;
+}
+
+/*FOOTER=================================================================================*/
+.foot {
+    height: 5vh;
+    width: 100%;
+    background: linear-gradient(90deg, #3d36ca, #524bcc, #635ecc, #524bcc, #3d36ca);
+    align-items: center;    
+    display: flex;
+    justify-content: space-between;    
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    position: relative;    
+}
+
+/*Línea naranja footer*/
+.foot::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja_principal);
+    pointer-events: none;
+}
+
+.brands {
+    display: flex;
+    width: 4em;
+    justify-content: space-between;    
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-top: 0.4em;        
+}
+
+.autor {
+    margin-top: 0.4em;
+}
+
+.nombre {
+    color: var(--naranja_principal);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 18px; 
+    margin-right: 1.5em;      
+}
+
+/*PÁGINA FIN_TEST_INVITADO==============================================================*/
+.reg_invitado {
+    display: flex;
+    height: 95vh;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+/*PÁGINA MEDALLA====================================================================================*/
+.toma_medalla {
+    height: 95vh;
+    display: flex;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.medallita {
+    height: 60vh;
+    animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
+                vibra_logo 1s ease-in-out 1.5s 1 normal none,
+                aura_logo 1s ease-in-out 2.5s 1 normal none;  
+}
+
+.premio_gordo {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.ventana_medalla {
+    width: 500px;
+    aspect-ratio: 1/1;
+    background-color: white;  
+}
+
+.boton_medalla {
+    height: 2.3em;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    position: relative;
+    margin: auto 7em;
+    margin-top: 2em;
+    
+}
+
+.boton_medalla:hover {
+    background-color: var(--naranja_sombra_logo);
+    color: white;
+}
+
+/*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
+.final_test {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95vh;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+.resultados {
+    height: 70%;
+    margin-left: 10em;
+}
+
+.resultados_test {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color:var(--naranja_principal);
+    width: 20%;
+    height: 25%;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3em;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);
+    border: 4px solid var(--naranja_principal);
+    box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);
+    border-radius: 1em;
+    gap: 0.8em;
+}
+
+/*PÁGINA ADMIN=============================================*/
+#logoBlue {
+    width: 16%;
+    margin-left: 0.7em;
+}
+
+.adminOrange {
+    background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
+}
+
+.adminOrange::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--azul_principal);
+    pointer-events: none;
+}
+
+#sectionBlue {
+    width: 100%;
+    height: 100vh;    
+    display: flex;    
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+}
+
+.aBlue {
+    color: var(--azul_principal)
+}
+
+#orangeFooter {
+    background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
+}
+
+#orangeFooter::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--azul_principal);
+    pointer-events: none;
+}
+
+.backgroundBlue {
+    background: var(--azul_principal);
+}
+
+
+/*MEDIA QUERY====================================================================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+  /*PÁGINA INICIO================================================*/ 
+
+  /*Primera sección*/   
+  .llegada {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .superlogo {
+    height: 26em;
+    margin: 0 auto;
+    margin-top: 10em;
+  }
+
+  .abajo {
+    width: 23em;
+    margin:0 auto;    
+  }
+
+  /*Todas las secciones*/
+  .odd, .even {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .odd {
+    flex-direction: column-reverse;
+  }
+
+  /*Segunda sección*/
+  .saludo {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .logos {
+    height: 36%;
+    margin-top: 6em;
+  }
+
+  /*Tercera sección*/
+  .menuvideo {
+    margin: 0 auto;
+    margin-left: 0.8em;
+    margin-top: 7em;
+    width: 95%;
+  }
+
+  .banderita {
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  /*Cuarta sección*/
+  .medallas {
+    margin-top: 6em;
+    margin-left: 6em;
+    width: 100%;
+  }
+
+  .podium {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /*Quinta sección*/
+  .videoai {        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 6em;    
+  }
+
+  video {
+    width: 23em;
+  }
+
+  .informatico {
+    height: 48%;
+    margin-left: 6em;    
+  }
+
+    /*Sexta sección*/
+  .adios {
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .star_register {
+    width: 50%;
+    margin-top: 5em;
+  }
+
+  .reg {
+    font-size: 2em;
+  }  
+  
+  /*PÁGINA FIN_TEST_INVITADO=============================================*/
+  .reg_invitado {
+    flex-direction: column-reverse;
+  }
+
+  .invitado {
+    height: 33em;
+  }  
+
+  /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
+  .final_test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    gap: 1.9em;
+  }
+
+  .resultados {
+    height: 50%;
+    margin-left: 1.8em;
+    margin-top: 3em;
+  }
+
+  .resultados_test {
+    width: 90%;
+    height: 30%;
+    font-size: 1.7em;
+  }
+
+  /*PÁGINA MEDALLA========================================================================*/
+  .toma_medalla {
+    flex-direction: column;    
+  }
+
+  .medallita {
+    height: 40vh;            
+  }
+
+  .premio_gordo {
+    height: 25vh
+  } 
+
+  .ventana_medalla {
+    width: 350px;    
+  }
+
+  .boton_medalla {
+    width: 50%;
+    height: 3em;
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 3em;        
+  }
+
+}
+
+/*Tablets pequeñas (481px a 767px)*/
+@media screen  and (min-width: 481px) and (max-width: 767px) {
+    /*PÁGINA INICIO================================================*/
+    .llegada {
+        flex-direction: column;    
+        align-items: center;
+    }
+    
+    .superlogo {
+        height: 34em;
+        margin-top: 10em;
+    }
+
+    .abajo {
+        height: 25%;    
+        margin-left: 50%;    
+    }
+
+    .odd, .even {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .odd {
+        flex-direction: column-reverse;
+    }
+
+    .logos {
+        height: 36%;
+        margin-top: 6em;
+    }
+
+    .saludo {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .menuvideo {
+        margin: 0 auto;
+        margin-left: 0.8em;
+        margin-top: 7em;
+        width: 95%;
+    }
+
+    .banderita {
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .medallas {
+        margin-top: 6.5em;
+        margin-left: 7.5em;
+        width: 100%;
+    }
+
+    .podium {
+        height: 85%;
+        margin: 0 auto;
+    }
+
+    .videoai {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 6.5em;    
+    }
+
+    video {
+        width: 30em;
+    }
+
+    .informatico {
+        height: 50%;
+        margin-left: 6em;    
+    }
+
+    .adios {
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    .star_register {
+        width: 40%;
+        margin-top: 7em;
+    }
+
+    /*PÁGINA FIN_TEST_INVITADO=============================================*/
+    .reg_invitado {
+        flex-direction: column-reverse;
+    }
+
+    .invitado {
+        height: 40em;
+    } 
+    
+    /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
+    .final_test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    gap: 1.9em;
+    }
+
+    .resultados {
+    height: 50%;
+    margin-left: 1.8em;
+    margin-top: 3em;
+    }
+
+    .resultados_test {
+    width: 90%;
+    height: 30%;
+    font-size: 1.7em;
+    }
+
+    /*PÁGINA MEDALLA========================================================================*/
+    .toma_medalla {
+        flex-direction: column;        
+    }
+
+    .medallita {
+        height: 45vh;
+        margin-top: 8em;        
+    }  
+
+    .premio_gordo {
+        height: 40vh;
+        width: 70%;    
+    }
+
+    .ventana_medalla {
+        height: 90%;
+    }
+
+    .boton_medalla {
+        width: 40%;
+        font-size: 1.4em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        margin-left: 7em;    
+    }
+
+}
+
+/*Tablets grandes y laptops (768px a 1199px)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    /*PÁGINA INICIO================================================*/    
+    header {
+        height: 13vh;
+    }
+    
+    .llegada {
+        display: flex;
+        flex-direction: row;    
+        align-items: center;    
+    }
+    
+    .superlogo {
+        margin-left: 20%;
+        height: 40em;
+    }
+
+    .abajo {
+        height: 40%;        
+        margin-top: 40%;        
+    }
+
+    .odd, .even {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .saludo {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .logos {
+        height: 45%;
+        margin-top: 6em;
+        margin-right: 13%;
+    }
+
+    .menuvideo {
+        margin: 0 auto;
+        margin-left: 4em;
+        margin-top: 5em;
+        width: 83%;
+    }
+
+    .banderita {
+        height: 50%;
+        margin-right: 7em;
+    }
+
+    .podium {
+        height: 70%;
+        margin-left: 10em;
+    }
+
+    .videoai {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10em;
+        margin-top: 4em;    
+    }
+
+    video {
+        width: 33em;
+    }
+
+    .informatico {
+        height: 60%;
+        margin-left: 2em;    
+    }
+
+    .adios {
+        height: 75%;
+        margin-left: 15em;
+    }
+
+    .star_register {
+        width: 25%;
+        margin-top: 7em;
+        margin-right: 7em;
+    }    
+
+    /*PÁGINA FIN_TEST_INVITADO=============================================*/
+    .reg_invitado {
+        flex-direction: column-reverse;
+    }
+
+    .invitado {
+        height: 40em;
+    }
+
+    .star_register {
+        width: 36%;
+    }
+    
+    /*PÁGINA FIN_TEST_SUSCRIPTOR=================================================================*/
+    .final_test {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        gap: 1.9em;
+    }
+
+    .resultados {
+        height: 70%;
+        margin-left: 1.8em;
+        margin-top: 3em;
+    }
+
+    .resultados_test {
+        width: 35%;
+        height: 33%;
+        font-size: 1.7em;
+    }
+
+    /*PÁGINA MEDALLA========================================================================*/
+    .toma_medalla {
+        flex-direction: column;        
+    }
+
+    .medallita {
+        height: 49vh;
+        margin-top: 5em;        
+    }
+
+    .premio_gordo {
+        height: 30vh;
+        width: 80%;        
+    }
+
+}
+
+/*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+    /* Ajustes específicos para portátiles modernos (el mío) */
+
+    /*INDEX - PRIMERA SECCIÓN========================================*/    
+    .abajo {
+        margin-top: 27%;        
+    }
+
+    /*PÁGINA FIN_TEST_INVITADO=============================================*/
+    .invitado {
+        height: 75%;
+
+    }
+
+    /*PÁGINA MEDALLA=========================================================*/
+    .medallita {
+        height: 78%;
+        margin-top: 6em;        
+    }
+
+    .premio_gordo {
+        margin-top: 6em;
+    }
+
+    /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
+    .resultados {
+        height: 80%;
+        margin-top: 6em;
+    }
+    
+    .resultados_test {
+        width: 30%;
+        height: 40%;
+    }
+
+    /*PÁGINA ADMIN=============================================*/
+    #logoBlue {
+        width: 14%;
+    }
+
+    
+
+}

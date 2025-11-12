@@ -1,0 +1,244 @@
+/*PÁGINA REGISTRO Y LOGIN===========================================================================*/
+.formulario_registro {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+.entrada {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.soldado {    
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.2s ease;
+    z-index: 1;
+}
+
+.soldado-izq {
+    top: 25%;
+    left: 17%;
+    width: 15%;
+}
+
+.soldado-der {
+    top: 25%;
+    right: 17%;
+    width: 15%;
+}
+
+.soldado.visible {
+    opacity: 1;
+}
+
+.registrate {  
+    width: 60%;
+    max-width: 30em;
+    height: auto;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 1.8em;
+    color: var(--azul_principal); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.amor_izq, .amor_dcha {
+    width: 15%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.2s ease;
+    z-index: 1;
+}
+
+.amor_izq.visible, .amor_dcha.visible {
+    opacity: 1;
+}
+
+.amor {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldset {
+    border: 5px var(--azul_principal) solid;
+    border-radius: 5%;
+    padding: 0.7em;
+    background-color: var(--naranja_filo_brillo_logo); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5); 
+}
+
+input {
+    border: 5px var(--azul_principal) solid;  
+    border-radius: 5%;
+    height: 3em;
+    width: 20.5em;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    font-size: 0.7em;
+    padding: 5px;
+    margin-bottom: 0.9em;
+}
+
+input[type="submit"] {  
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 1em;
+    color: var(--azul_principal);
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: center;
+    height: 1.8em;
+    background-color: var(--naranja_principal); 
+    width: 5em;
+    margin-top: 1.5em;
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    cursor: pointer;     
+}
+
+input[type="submit"]:hover {
+    background-color: var(--azul_principal);
+    color: var(--naranja_principal);
+}
+
+
+
+.info {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 1.5em;
+    color: var(--azul_principal);
+    padding: 1em;  
+}
+
+.al_registro {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 1.5em;
+    color: var(--azul_principal);
+    padding: 1em;
+    text-decoration: none;  
+}
+
+.bajo_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.enlaceReg {
+    font-size: 2em;
+    animation: cambio-color 1.5s infinite alternate;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+/*MEDIA QUERY=======================================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+    .soldado {
+        display: none;
+    }
+
+    .amor_izq, .amor_dcha {
+        display: none;
+    }
+
+    .registrate {
+        width: 96%;
+    }
+
+    input {
+        width: 15em;
+    }
+
+    .amor {
+        margin-top: 5em;
+    }
+
+    .info {
+        padding: 0em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 1.3em;
+    }
+}
+
+/*Tablets pequeñas (481px a 767px)*/
+@media screen  and (min-width: 481px) and (max-width: 767px) {
+    .registrate {
+        width: 75%;
+    }
+    
+}
+
+/*Tablets grandes y laptops (768px a 1199px)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .registrate {
+        font-size: 1.3em;
+    }
+
+    .info {
+        padding: 0em;
+        padding-left: 2em;
+    }
+
+    .al_registro {
+        padding: 0.2em;
+    }
+
+    .formulario_registro {
+        gap: 0.5em;
+    }
+
+    input[type="submit"] {
+        padding-bottom: 1.5em;
+    }
+}
+
+/*Laptops grandes y escritorios (de 1200px a 1999px)*/
+/* Ajustes específicos para portátiles modernos (el mío) */
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+    .formulario_registro {
+        height: 65vh;
+    }
+
+    input[type="submit"] {
+        margin-top: -0.5em;
+    }
+
+    
+}
+
+

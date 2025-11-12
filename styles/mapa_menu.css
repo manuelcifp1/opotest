@@ -1,0 +1,203 @@
+/*MAPA Y MENÚ===================================================================================*/
+#contenedor_oposito, #contenedor_menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;    
+    overflow: hidden;    
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+#contenedor_oposito {
+    left: 0;
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;    
+    width: 40%;
+    padding-top: 40px; 
+    display: flex;      
+}
+
+#mapa_ccaa {
+    border: var(--azul_principal) 4px ridge;
+    width: 90%;  
+}
+
+#contenedor_menu {
+    right: 0;
+    left: auto;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
+    transform: translateX(100%);
+    width: 60%;
+    padding-top: 8% 10% 4%;
+}
+
+/* Cuando están visibles */
+#contenedor_oposito.visible, #contenedor_menu.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Menú dentro del contenedor */
+#contenedor_menu {
+    display: flex;
+    flex-direction: column;    
+}
+
+#contenedor_menu ul {
+    list-style: none;
+    text-align: center;    
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4%;
+    color: var(--naranja_principal);  
+}
+
+.titulo {
+    font-size: 3em;
+}
+
+.encabezado_menu {
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+    color: var(--naranja_principal);
+    text-shadow: 
+      1px 1px 2px black,
+      -1px 1px 2px black,
+      1px -1px 2px black,
+      -1px -1px 2px black;  
+}
+
+.ceuta_melilla {
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease;   
+    font-weight:500;
+    margin-top: 17%;
+}
+
+.ceuta_melilla:hover {
+    border: var(--naranja_principal) 2px solid;
+    padding: 3px 7px;
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 5px;
+}
+
+.contenedor_listas {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;  
+}
+
+#contenedor_menu ul li {
+    margin: 20px 0;
+    font-family: "Lexend", sans-serif;        
+}
+
+#contenedor_menu ul li a {
+    text-decoration: none;    
+    transition: color 0.3s ease;
+    color: var(--naranja_principal);
+    font-size: 2em;
+    font-weight:500;
+    text-shadow: 
+    1px 1px 2px black,
+    -1px 1px 2px black,
+    1px -1px 2px black,
+    -1px -1px 2px black;
+}
+
+#contenedor_menu ul li a:hover {
+    border: var(--naranja_principal) 2px solid;
+    padding: 3px 3px;
+    background-color: var(--naranja_filo_brillo_logo);
+    border-radius: 5px;
+}
+
+/*MEDIA QUERY==========================================================================================*/
+
+/*Teléfonos (hasta 480px)*/
+@media screen  and (max-width: 480px) {
+    #contenedor_menu {
+    transform: translateY(-100%);
+    width: 100%;    
+  }
+
+  #contenedor_menu {
+    height: 100vh;
+    z-index: 100;    
+  }
+
+  #contenedor_oposito {
+    display: none;
+  }
+
+  .ceuta_melilla {
+    font-size: 1.6em;
+    padding-bottom: 1.5em;    
+  }
+
+  #contenedor_menu ul li a {
+    font-size: 1.6em;        
+  }
+  
+  #contenedor_menu ul li {
+    padding-bottom: 1.3em;
+  }
+
+  .encabezado {
+    margin-top: 4em;
+  }
+}
+
+/*Tablets pequeñas (481px a 767px)*/
+@media screen  and (min-width: 481px) and (max-width: 767px) {
+    #contenedor_menu {
+        transform: translateY(-100%);
+        width: 100%;
+        height: 100vh;
+        z-index: 100;    
+    }  
+
+    #contenedor_oposito {
+        display: none;
+    }
+
+    .ceuta_melilla {
+        font-size: 2em;
+        padding-bottom: 1.5em;    
+    }
+
+    #contenedor_menu ul li a {
+        font-size: 2em;        
+    }
+    
+    #contenedor_menu ul li {
+        padding-bottom: 1.3em;
+    }
+}
+
+/*Tablets grandes y laptops (768px a 1199px)*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .ceuta_melilla {
+        font-size: 2em;
+        padding-bottom: 1.5em;    
+    }
+
+    #contenedor_menu ul li a {
+        font-size: 1.5em;        
+    }
+}
+
