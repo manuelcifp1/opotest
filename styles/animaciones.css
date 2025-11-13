@@ -168,7 +168,7 @@
     }
 }
 
-/*Carnets Oposito=======================================================================*/
+/*Carnets Oposito*/
 @keyframes carnetFade {
     0% {
         opacity: 0;
@@ -183,5 +183,20 @@
         opacity: 0;
     }
 }
+
+/*Animación img estadísticas*/
+@keyframes pantallaGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+
 
 
