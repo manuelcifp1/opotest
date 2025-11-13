@@ -329,7 +329,7 @@ i {
 
 .brands {
     display: flex;
-    width: 10%;
+    width: 13%;
     justify-content: space-between;
     align-items: center;    
     font-size: 1.8em;
@@ -983,7 +983,7 @@ i {
 
     /*FOOTER======================================================*/
     .brands {
-        gap: 1em;
+        gap: 1.3em;
     }
 
 
