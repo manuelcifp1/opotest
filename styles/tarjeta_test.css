@@ -78,6 +78,15 @@
     margin-left: -9em;
 }
 
+.enlaces_prueba {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.3em;    
+}
+
+.enlaces_prueba a {
+    color: var(--naranja_principal);
+}
+
 /*MEDIA QUERY=============================================================================*/
 
 /*Teléfonos (hasta 480px)*/
