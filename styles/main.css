@@ -136,7 +136,7 @@ i {
 
 .abajo {    
     height: 48%;       
-    margin-top: 30%;
+    margin-top: 26%;
     margin-right: 5%;    
     opacity: 0;
     transform: translateY(100vh);
@@ -373,10 +373,11 @@ i {
 }
 
 .medallita {
-    height: 60vh;
+    height: 70vh;
     animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
                 vibra_logo 1s ease-in-out 1.5s 1 normal none,
-                aura_logo 1s ease-in-out 2.5s 1 normal none;  
+                aura_logo 1s ease-in-out 2.5s 1 normal none;
+    margin-top: 10%;              
 }
 
 .premio_gordo {
@@ -462,6 +463,11 @@ i {
     background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
 }
 
+.adminBlue {
+    color: var(--azul_principal);
+    font-size: 1.2em;
+}
+
 .adminOrange::after {
     content: '';
     position: absolute;
@@ -488,8 +494,28 @@ i {
     flex-direction: column;          
 }
 
+.loginOrange {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.perfilOrange {
+    margin-right: 1em;
+}
+
+.accesoOrange {
+    margin-right: 1em;
+}
+
+.burgerOrange {
+    top: 2.5em;
+}
+
 .aBlue {
-    color: var(--azul_principal)
+    color: var(--azul_principal);
+    width: 8%;
+    font-size: 1.5em;
 }
 
 #orangeFooter {
