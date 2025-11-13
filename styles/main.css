@@ -311,8 +311,7 @@ i {
     align-items: center;    
     display: flex;
     justify-content: space-between;    
-    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
-    
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);    
     position: relative;    
 }
 
@@ -482,7 +481,7 @@ i {
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('img/fondo_mosaico_azul.png');
     background-repeat: repeat;
-    background-size: 110px;
+    background-size: 110px;    
 }
 
 .aBlue {
