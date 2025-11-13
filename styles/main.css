@@ -32,7 +32,8 @@ html, body {
 
 main {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    height: 100%;    
 }
 
 /*HEADER========================================================================================================*/
@@ -62,10 +63,8 @@ header::after {
 }
 
 .logo {
-    height: 8.4em;
-    width: auto;    
-    margin-left: 0em;
-    margin-top: 0.7em;    
+    width: 13%;        
+    margin-left: 1%;       
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
 }
 
@@ -127,9 +126,9 @@ i {
 }
 
 .superlogo {
-    height: 80%;        
+    height: 55%;        
     margin: 0 auto;
-    margin-top: 8%;       
+    margin-top: 12%;       
     animation: rotacion_logo 1.2s ease-in-out 0s 1 normal none,
                vibra_logo 1s ease-in-out 1.5s 1 normal none,
                aura_logo 1s ease-in-out 2.5s 1 normal none;     
@@ -150,7 +149,7 @@ i {
     margin-left: 10%;
     margin-top: 4%;    
 }
-
+/*logos de organismos*/
 .logos {
     height: 60%;
     margin-top: 3%;
@@ -161,7 +160,7 @@ i {
     position: relative;
     overflow: hidden;
 }
-
+/*Esto es para JavaScript, para el carrusel de logos*/
 .logo-img {
     width: 80%;
     height: 80%;
@@ -960,6 +959,9 @@ i {
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     /* Ajustes específicos para portátiles modernos (el mío) */
 
+    /*HEADER==================================*/
+    
+    
     /*INDEX - PRIMERA SECCIÓN========================================*/    
     .abajo {
         margin-top: 27%;        
