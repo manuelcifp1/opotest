@@ -115,6 +115,7 @@
     grid-auto-rows: 1fr; /* Las filas crecen igual que las columnas */
     aspect-ratio: auto;
     margin: 0 auto;
+    margin-bottom: 14%;
     padding: 15px;     
 }
 
@@ -144,6 +145,7 @@
 
 .iconsPerfil {
     margin-left: -1.8em;
+    text-decoration: none;
 }
 
 .autorPerfil {
@@ -154,6 +156,7 @@
 .footPerfil {
     scroll-snap-align: start;   /* Lo alinea como destino de scroll */
     scroll-snap-stop: always;
+    
 }
 
 /*MEDIA QUERY=================================================================================*/
