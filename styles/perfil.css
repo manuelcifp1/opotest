@@ -43,7 +43,7 @@
 
 .palabras {
     width: 28vw;
-    height: 46vh;  
+    height: 42vh;  
     padding-left: 1em;
     padding-right: 1.5em;
     border: 4px solid var(--naranja_principal);
@@ -354,8 +354,7 @@
     }
     
     .palabras {
-        width: 40vw;
-        height: 50vh;        
+        width: 40vw;                
     }
 
     .cuadro {
