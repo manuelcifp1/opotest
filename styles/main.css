@@ -473,15 +473,19 @@ i {
     pointer-events: none;
 }
 
-#sectionBlue {
-    width: 100%;
-    min-height: 95vh;    
-    display: flex;    
+.bodyAdmin {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('img/fondo_mosaico_azul.png');
     background-repeat: repeat;
-    background-size: 110px;    
+    background-size: 110px;
+}
+
+#sectionBlue {
+    width: 100%;
+    min-height: 95vh;    
+    display: flex;
+    flex-direction: column;          
 }
 
 .aBlue {
@@ -490,6 +494,7 @@ i {
 
 #orangeFooter {
     background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
+    
 }
 
 #orangeFooter::before {
