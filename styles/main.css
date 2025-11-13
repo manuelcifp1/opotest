@@ -33,7 +33,7 @@ html, body {
 main {
     display: flex;
     flex-direction: column;
-    height: 100%;    
+    min-height: 100vh;    
 }
 
 /*HEADER========================================================================================================*/
@@ -330,11 +330,11 @@ i {
 
 .brands {
     display: flex;
-    width: 4em;
-    justify-content: space-between;    
-    font-size: 1.5em;
-    margin-left: 1em;
-    margin-top: 0.4em;        
+    width: 8%;
+    justify-content: space-between;
+    align-items: center;    
+    font-size: 1.8em;
+    margin-left: 1em;            
 }
 
 .autor {
