@@ -1,4 +1,3 @@
-@import url("style_inicio.css");
 @import url("animaciones.css");
 @import url("burger.css");
 @import url("mapa_menu.css");
@@ -107,10 +106,6 @@ i {
     align-items: center;        
 }
 
-.ultima {
-    height: 95vh;
-}
-
 .snapping {
     scroll-snap-align: end;
     scroll-snap-stop: always;
@@ -132,7 +127,7 @@ i {
 }
 
 .superlogo {
-    height: 60em;        
+    height: 80%;        
     margin: 0 auto;
     margin-top: 8%;       
     animation: rotacion_logo 1.2s ease-in-out 0s 1 normal none,
@@ -233,10 +228,31 @@ i {
 }
 
 /*INDEX - SEXTA SECCIÓN==============================================================================*/
+.ultima {
+    background-image: url('img/fondo_mosaico_blanco.png');
+    background-repeat: repeat;
+    background-size: 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parte_final {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    height: 92vh;
+
+}
+
 .adios {
     height: 75%;
-    margin-top: 5em;
-    margin-left: 15%;   
+    margin-top: 5em;      
 }
 
 .star_register {
@@ -297,8 +313,7 @@ i {
     display: flex;
     justify-content: space-between;    
     box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
+    
     position: relative;    
 }
 
@@ -948,6 +963,11 @@ i {
     /*INDEX - PRIMERA SECCIÓN========================================*/    
     .abajo {
         margin-top: 27%;        
+    }
+
+    /*INDEX - SEXTA SECCIÓN*/
+    .adios {
+        height: 85%;
     }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
