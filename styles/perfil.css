@@ -354,6 +354,7 @@
     .cifras {
         gap: 3em;
         width: 87vw;
+        height: 95vh;
     }
 
     .consulta_estadisticas {
@@ -374,5 +375,13 @@
 
   .cuadro_medallas {
     margin-top: 0;
+  }
+
+  .identificacion {
+    height: 95vh;
+  }
+
+  .estadisticas {
+    height: 95vh;
   }
 }
