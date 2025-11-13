@@ -20,7 +20,7 @@ body.no-snap {
     font-size: 3em;
     font-weight: 700;
     color: var(--azul_principal);
-    margin-top: 3%;
+    margin-top: 5%;
     background-color: var(--naranja_filo_brillo_logo);
     padding: 0.2em 0.2em;
     border: var(--azul_principal) 3px solid;
