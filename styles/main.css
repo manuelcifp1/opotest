@@ -476,7 +476,7 @@ i {
 
 #sectionBlue {
     width: 100%;
-    height: 100vh;    
+    min-height: 95vh;    
     display: flex;    
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -506,6 +506,11 @@ i {
 
 .backgroundBlue {
     background: var(--azul_principal);
+}
+
+.blueTest {
+    background-color: var(--azul_principal);
+    padding: 0.2em;
 }
 
 
@@ -1002,6 +1007,10 @@ i {
     /*PÁGINA ADMIN=============================================*/
     #logoBlue {
         width: 14%;
+    }
+
+    .sectionBlue {
+        min-height: 95vh;
     }
 
     
