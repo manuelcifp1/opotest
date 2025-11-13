@@ -329,7 +329,7 @@ i {
 
 .brands {
     display: flex;
-    width: 8%;
+    width: 10%;
     justify-content: space-between;
     align-items: center;    
     font-size: 1.8em;
