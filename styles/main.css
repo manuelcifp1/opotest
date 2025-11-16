@@ -98,7 +98,7 @@ i {
     background-image: url('img/fondo_mosaico_blanco.png');
     background-repeat: repeat;
     background-size: 100px;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -311,21 +311,10 @@ i {
     align-items: center;    
     display: flex;
     justify-content: space-between;    
-    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);    
-    position: relative;    
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);        
 }
 
-/*Línea naranja footer*/
-.foot::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--naranja_principal);
-    pointer-events: none;
-}
+
 
 .brands {
     display: flex;
@@ -369,27 +358,28 @@ i {
     background-repeat: repeat;
     background-size: 100px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;          
 }
 
 .medallita {
-    height: 70vh;
+    height: 78vh;
     animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
                 vibra_logo 1s ease-in-out 1.5s 1 normal none,
                 aura_logo 1s ease-in-out 2.5s 1 normal none;
-    margin-top: 10%;              
+    margin-top: 12%;              
 }
 
 .premio_gordo {
-    height: 45vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    margin-top: 12%;    
 }
 
 .ventana_medalla {
-    width: 500px;
+    width: 60%;
     aspect-ratio: 1/1;
     background-color: white;  
 }
@@ -403,8 +393,7 @@ i {
     box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
     position: relative;
     margin: auto 7em;
-    margin-top: 2em;
-    
+    margin-top: 2em;    
 }
 
 .boton_medalla:hover {
@@ -1016,17 +1005,12 @@ i {
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .invitado {
         height: 75%;
-
     }
 
     /*PÁGINA MEDALLA=========================================================*/
-    .medallita {
-        height: 78%;
-        margin-top: 6em;        
-    }
-
-    .premio_gordo {
-        margin-top: 6em;
+    
+    .toma_medalla {
+        height: 105%;
     }
 
     /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
