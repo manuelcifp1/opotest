@@ -59,24 +59,30 @@
 
 .identificacion {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 7em;
     width: 75vw;
   
 }
 
 .carnets_oposito {   
-    height: 46vh;    
+    height: 33.2vh;
+    width: 24.9vw;    
     border: 10px var(--naranja_principal) ridge;
-    background-color: white;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/fondo_mosaico_azul.png');
+    background-repeat: repeat;
+    background-size: 110px;
     position: relative;
     overflow: hidden;
     border-radius: 5%;
 }
 
 .carnet-img {
-    width: 80%;
-    height: 73%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     position: absolute;
     top: 50%;
@@ -146,7 +152,10 @@
 }
 
 .iconsPerfil {
-    margin-left: -1.8em;
+    margin-left: -1.8em;    
+}
+
+.noLine {
     text-decoration: none;
 }
 
