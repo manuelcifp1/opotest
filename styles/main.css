@@ -151,6 +151,7 @@ i {
     margin-left: 10%;
     margin-top: 4%;    
 }
+
 /*logos de organismos*/
 .logos {
     height: 60%;
@@ -162,6 +163,7 @@ i {
     position: relative;
     overflow: hidden;
 }
+
 /*Esto es para JavaScript, para el carrusel de logos*/
 .logo-img {
     width: 80%;
@@ -238,8 +240,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .parte_final {
@@ -248,7 +249,6 @@ i {
     width: 100%;
     align-items: center;
     height: 92vh;
-
 }
 
 .adios {
@@ -342,6 +342,7 @@ i {
 /*PÁGINA FIN_TEST_INVITADO==============================================================*/
 .reg_invitado {
     display: flex;
+    flex-direction: column;
     height: 95vh;
     justify-content: space-around;
     align-items: center;
@@ -350,15 +351,29 @@ i {
     background-size: 100px;
 }
 
+.invitacion_al_registro {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5.1vh;
+}
+
 /*PÁGINA MEDALLA====================================================================================*/
 .toma_medalla {
     height: 95vh;
     display: flex;
-    background-image: url('img/fondo_mosaico_blanco.png');
-    background-repeat: repeat;
-    background-size: 100px;
-    justify-content: space-evenly;
-    align-items: center;          
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;             
+}
+
+.entrega_de_premios {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.9vh;
 }
 
 .medallita {
@@ -404,12 +419,21 @@ i {
 /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
 .final_test {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 95vh;
     background-image: url('img/fondo_mosaico_blanco.png');
     background-repeat: repeat;
     background-size: 100px;
+}
+
+.las_notas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 0.7vh;
 }
 
 .resultados {
