@@ -3,8 +3,7 @@
     width: 60vh;
     animation: rotacion_logo 1.5s ease-in-out 0s 1 normal none,
                 vibra_logo 1s ease-in-out 1.5s 1 normal none,
-                aura_logo 1s ease-in-out 2.5s 1 normal none;
-    margin-left: 24em;
+                aura_logo 1s ease-in-out 2.5s 1 normal none;    
 }
 
 .familia {
@@ -13,8 +12,20 @@
     background-repeat: repeat;
     background-size: 100px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.recien_llegado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    margin-top: 9.9%;
+    margin-bottom: 5%;
+    
+    
 }
 
 .instrucciones {
@@ -120,6 +131,10 @@
 .perfil-btn:hover {
     background-color: var(--naranja_sombra_logo);
     color: white;
+}
+
+.cBienvenido {
+    font-size: 10em;
 }
 
 /*MEDIA QUERY=========================================================================*/
