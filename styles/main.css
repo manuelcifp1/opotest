@@ -231,10 +231,7 @@ i {
 }
 
 /*INDEX - SEXTA SECCIÓN==============================================================================*/
-.ultima {
-    background-image: url('img/fondo_mosaico_blanco.png');
-    background-repeat: repeat;
-    background-size: 100px;
+.ultima {    
     height: 100vh;
     width: 100%;
     display: flex;
@@ -245,10 +242,12 @@ i {
 
 .parte_final {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 7%;    
     width: 100%;
     align-items: center;
     height: 92vh;
+    margin-top: 1.5%;
 }
 
 .adios {
@@ -265,7 +264,7 @@ i {
     border-radius: 100%;
     position: relative;
     overflow: visible;
-    width: 22%;
+    width: 19%;
     aspect-ratio: 1/1;    
     background-color: var(--azul_principal);
     animation: zoomLoop 4s ease-in-out infinite;    
@@ -313,12 +312,13 @@ i {
     align-items: center;    
     display: flex;
     justify-content: space-between;    
-    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);        
+    box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
+    padding: 0.5%;        
 }
 
 .brands {
     display: flex;
-    width: 10%;
+    width: 8%;
     justify-content: space-between;
     align-items: center;    
     font-size: 1.8em;
@@ -343,20 +343,22 @@ i {
 .reg_invitado {
     display: flex;
     flex-direction: column;
-    height: 95vh;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url('img/fondo_mosaico_blanco.png');
-    background-repeat: repeat;
-    background-size: 100px;
+    height: 95vh;    
+    align-items: center;    
 }
 
 .invitacion_al_registro {
     width: 80vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10%;
     align-items: center;
-    margin-top: 5.1vh;
+    margin-top: 9%;
+    margin-bottom: 3.45%;    
+}
+
+.invitadoReg {
+    height: 70vh;
 }
 
 /*PÁGINA MEDALLA====================================================================================*/
