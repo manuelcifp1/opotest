@@ -1043,8 +1043,13 @@ i {
 
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
-    .invitado {
-        height: 75%;
+    .invitacion_al_registro {
+        margin-top: 3%;
+        margin-bottom: -1.2%;
+    }
+    
+    .invitadoReg {
+        height: 80%;
     }
 
     /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
