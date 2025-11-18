@@ -1053,6 +1053,11 @@ i {
     }
 
     /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
+    .las_notas {
+        margin-top: 2%;
+        margin-bottom: -2.4%;
+    }
+    
     .resultados {
         height: 80%;
         margin-top: 6em;
