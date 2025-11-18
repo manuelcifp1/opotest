@@ -239,6 +239,16 @@ label {
     input[type="submit"] {
         margin-top: -0.5em;
     }
+    
+    .entrada {
+        margin-top: 11%;
+
+    }
+
+
+    .bajo_login {
+        margin-bottom: -4%;
+    }
 
     
 }
