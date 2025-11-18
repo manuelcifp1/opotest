@@ -505,9 +505,8 @@ i {
 
 #sectionBlue {
     width: 100%;
-    min-height: 95vh;    
-    display: flex;
-    flex-direction: column;          
+    height: 95vh;    
+    display: flex;              
 }
 
 .loginOrange {
@@ -537,17 +536,6 @@ i {
 #orangeFooter {
     background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
     
-}
-
-#orangeFooter::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--azul_principal);
-    pointer-events: none;
 }
 
 .backgroundBlue {
@@ -1078,7 +1066,15 @@ i {
     }
 
     .sectionBlue {
-        min-height: 95vh;
+        height: 95vh;
+    }
+
+    .burgerOrange {
+        top: 2em;
+    }
+
+    .aBlue {
+        width: 10%;
     }
 
     
