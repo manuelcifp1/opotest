@@ -228,10 +228,12 @@
 /* Ajustes específicos para portátiles modernos (el mío) */
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     .familia {
-    height: auto; /* permite crecer verticalmente si hace falta */
-    min-height: 95vh;
-    padding: 2em 5em;
-    gap: 6em;
+    height: 95vh;        
+  }
+
+  .recien_llegado {
+    margin-top: 11.7%;
+    margin-bottom: 2.5%;
   }
 
   .instrucciones {
@@ -248,9 +250,8 @@
     width: 33vw;
     height: 90vh;
     height: auto;
-    max-height: 70vh; /* lo deja escalar pero evita que se pase */
-    margin: 0;
-    align-self: flex-start; /* para evitar que quede encajado por align-items */
-    margin-top: 10em;
+    max-height: 70vh; /* lo deja escalar pero evita que se pase */   
+    align-self: flex-start; /* para evitar que quede encajado por align-items */    
   }
+  
 }
