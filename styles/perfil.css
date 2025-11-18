@@ -364,12 +364,18 @@
     }
     
     .carnets_oposito {
-        height: 41.6vh;
-        width: 39.8vw;
+        height: 36.5vh;
+        width: 64vw;
     }
     
     .palabras {
-        width: 40vw;                
+        width: 60vw;
+        height: 33vh;
+        font-size: 0.8em;              
+    }
+
+    .dos {
+        width: 32vw;
     }
 
     .cuadro {
@@ -414,6 +420,7 @@
 
   .cuadro_medallas {
     margin-top: 0;
+    margin-bottom: 13.6%;
   }
 
   .identificacion {
