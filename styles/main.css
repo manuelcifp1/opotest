@@ -1018,14 +1018,27 @@ i {
         margin-top: 27%;        
     }
 
+    /*INDEX - CUARTA SECCIÓN==========================================*/
+    .podium {
+        height: 82%;
+    }
+
     /*INDEX - SEXTA SECCIÓN*/
     .adios {
         height: 85%;
     }
 
+    .parte_final {
+        margin-top: 0.3%;
+    }
+
     /*FOOTER======================================================*/
     .brands {
         gap: 0.1em;
+    }
+
+    .fa-copyright {
+        font-size: 1em;
     }
 
 
