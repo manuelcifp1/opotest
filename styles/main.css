@@ -554,7 +554,12 @@ i {
 @media screen  and (max-width: 480px) {
   /*PÁGINA INICIO================================================*/ 
 
-  /*Primera sección*/   
+  /*HEADER*/
+
+  /*Primera sección*/
+  .logo {
+    width: 28%;
+  }   
   .llegada {
     flex-direction: column;
     justify-content: center;
@@ -638,9 +643,14 @@ i {
   }
 
     /*Sexta sección*/
+  .parte_final {
+    flex-direction: column;
+    gap: 0%;
+    margin-bottom: 4.3%;
+  }
+
   .adios {
-    height: 50%;
-    margin: 0 auto;
+    height: 50%;    
   }
 
   .star_register {
@@ -650,15 +660,41 @@ i {
 
   .reg {
     font-size: 2em;
-  }  
+  } 
+
+  /*Footer*/
+  .brands {
+    margin-left: 0.2em;    
+  }
   
-  /*PÁGINA FIN_TEST_INVITADO=============================================*/
-  .reg_invitado {
-    flex-direction: column-reverse;
+  .brands a {
+    font-size: 20px;
+    padding: 4px;
   }
 
-  .invitado {
-    height: 33em;
+  .enlaces_prueba {
+    margin-left: 70px;
+  }
+
+  .enlaces_prueba a {
+    font-size: 12px;
+  }
+
+  .fa-copyright {
+    font-size: 13px;
+  }
+  
+  /*PÁGINA FIN_TEST_INVITADO=============================================*/ 
+
+  .invitacion_al_registro {
+    flex-direction: column;
+    gap: 0%;
+    margin-top: 0%;
+    height: 100%;    
+  }
+
+  .invitadoReg {
+    height: 50%;    
   }  
 
   /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
