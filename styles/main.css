@@ -564,16 +564,17 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10em;
   }
   
   .superlogo {
-    height: 26em;
+    height: 20em;
     margin: 0 auto;
     margin-top: 10em;
   }
 
   .abajo {
-    width: 23em;
+    height: 33%;
     margin:0 auto;    
   }
 
@@ -650,16 +651,16 @@ i {
   }
 
   .adios {
-    height: 50%;    
+    height: 56%;    
   }
 
   .star_register {
-    width: 50%;
-    margin-top: 5em;
+    width: 58%;
+    margin-top: 3em;
   }
 
   .reg {
-    font-size: 2em;
+    font-size: 1.5em;
   } 
 
   /*Footer*/
