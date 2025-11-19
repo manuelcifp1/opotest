@@ -899,13 +899,25 @@ i {
     }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
-    .reg_invitado {
-        flex-direction: column-reverse;
+    
+
+    .invitadoReg {
+        height: 48vh;        
+    }
+    
+    .invitacion_al_registro {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20%;
     }
 
-    .invitado {
-        height: 40em;
-    } 
+    .star_register {
+        width: 43vw;
+    }
+    
+    .reg {
+        font-size: 2em;
+    }
     
     /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
     .final_test {
