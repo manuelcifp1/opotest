@@ -768,7 +768,17 @@ i {
   }
 
   /*PÁGINA ADMIN===================================================*/
-  
+  #logoBlue {
+    width: 25%;
+  }
+
+  .burgerOrange {
+    top: 30px;
+  }
+
+  .aBlue {
+    font-size: 25px;
+  }
 
 }
 
