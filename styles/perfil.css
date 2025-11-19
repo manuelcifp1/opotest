@@ -178,10 +178,11 @@
 
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
+    /*Primera sección*/
     h1 {
     font-size: 1.3em;
     margin-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 10%;
   }
   
   .datos {
@@ -193,12 +194,20 @@
     flex-direction: column;
   }
 
+  .identificacion {
+    gap: 0.5em;
+  }
+
   .palabras {
     width: 90vw;
-    font-size: 0.6em;
+    font-size: 0.7em;
     height: 33vh;
     margin-bottom: 60px;
     padding-left: 0.1em;
+  }
+
+  .cuadro h3 {
+    padding: 0.5em;
   }
 
   .carnets_oposito {
@@ -210,15 +219,18 @@
     width: 100%;
     height: auto;
   }
-
+  /*Segunda sección*/
   .consulta_estadisticas {
     height: 33vh;
     margin-bottom: 45px;
     margin-top: 30px;
   }  
-
+  /*Tercera sección*/
   .medallero {
     justify-content: center;
+    min-height: auto;
+    height: auto;
+    overflow-y: visible;
   }
 
   .medallero h1 {
@@ -227,6 +239,25 @@
 
   .cuadro_medallas {
     width: 90vw;    
+  }
+
+  .footPerfil {
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+  }
+
+  .cuadro p {
+    padding: 0.7em;
+  }
+
+  .iconsPerfiltodos {
+    padding: 0.8em;
+    margin-left: 10px;
+  }
+
+  .iconsPerfil {
+    font-size: 1em;
+    padding: 1em;
   }
 
 }
