@@ -1006,9 +1006,19 @@ i {
         margin-top: 27%;        
     }
 
+    /*INDEX - TERCERA SECCIÓN==========================================*/
+    .banderita {
+        height: 80%;
+    }
+
     /*INDEX - CUARTA SECCIÓN==========================================*/
     .podium {
         height: 82%;
+    }
+
+    /*INDEX - QUINTA SECCIÓN===================================================*/
+    .informatico {
+        height: 80%;
     }
 
     /*INDEX - SEXTA SECCIÓN*/
