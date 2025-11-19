@@ -195,6 +195,21 @@ label {
         padding-right: 0.5em;
         font-size: 1.3em;
     }
+
+    .formulario_registro {
+        flex: 1;
+        min-height: auto;
+        font-size: 0.8em;
+    }
+
+    input[type="submit"] {
+        padding: 0;
+    }
+
+    .info {
+        font-size: 2em;
+    }
+
 }
 
 /*Tablets pequeñas (481px a 767px)*/
