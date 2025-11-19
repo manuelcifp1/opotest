@@ -264,15 +264,19 @@
 
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
-    h1 {
+    .persona h1 {
     font-size: 1.5em;
-    margin-bottom: 40px;
-    margin-top: 140px;
+    margin-bottom: 0.5em;
+    margin-top: 3em;
     }
   
     .datos {
         justify-content: center;
-        align-items: center;
+        align-items: center;                
+    }
+
+    .carnets_oposito {
+        margin-top: 0;
     }
     
     .identificacion, .cifras {
@@ -282,9 +286,10 @@
     .palabras {
         width: 90vw;
         font-size: 0.8em;
-        height: 37vh;
-        margin-bottom: 60px;
+        height: 35vh;        
         padding-left: 0.1em;
+        padding: -1em;
+        margin-bottom: -15vh;
     }
 
     .carnets_oposito {
@@ -300,7 +305,7 @@
     .consulta_estadisticas {
         height: 33vh;
         margin-bottom: 45px;
-        margin-top: 30px;
+        margin-top: -4em;
     }  
 
     .medallero {
