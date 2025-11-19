@@ -899,8 +899,6 @@ i {
     }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
-    
-
     .invitadoReg {
         height: 48vh;        
     }
@@ -932,13 +930,18 @@ i {
     .resultados {
     height: 50%;
     margin-left: 1.8em;
-    margin-top: 3em;
+    margin-top: 5em;
     }
 
     .resultados_test {
     width: 90%;
     height: 30%;
     font-size: 1.7em;
+    }
+
+    .las_notas {
+        flex-direction: column;
+        gap: 2.5em;
     }
 
     /*PÁGINA MEDALLA========================================================================*/
