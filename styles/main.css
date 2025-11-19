@@ -707,8 +707,14 @@ i {
     gap: 1.9em;
   }
 
+  .las_notas {
+    flex-direction: column;
+    gap: 3.5%;
+    margin-bottom: -15%;
+  }
+
   .resultados {
-    height: 50%;
+    height: 45%;
     margin-left: 1.8em;
     margin-top: 3em;
   }
