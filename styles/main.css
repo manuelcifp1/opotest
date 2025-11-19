@@ -725,13 +725,30 @@ i {
     font-size: 1.7em;
   }
 
-  /*PÁGINA MEDALLA========================================================================*/
+    /*PÁGINA MEDALLA========================================================================*/
+  main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+
+  
   .toma_medalla {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; /* Esto hará que tome el espacio restante de main */
+    height: auto; /* Anula el 95vh que lo limitaba */        
+  }
+
+  .entrega_de_premios {
     flex-direction: column;    
+    height: auto;
+    margin-top: 15%;        
   }
 
   .medallita {
-    height: 40vh;            
+    height: 45vh;
+    margin-bottom: 18%;            
   }
 
   .premio_gordo {
@@ -739,16 +756,19 @@ i {
   } 
 
   .ventana_medalla {
-    width: 350px;    
+    width: 300px;    
   }
 
   .boton_medalla {
-    width: 50%;
+    width: 40%;
     height: 3em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 1em;
-    margin-bottom: 3em;        
+    margin-bottom: 5em;        
   }
+
+  /*PÁGINA ADMIN===================================================*/
+  
 
 }
 
