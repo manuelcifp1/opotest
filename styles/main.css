@@ -339,6 +339,14 @@ i {
     margin-right: 1.5em;      
 }
 
+.enlaces_prueba {
+    margin: 0 auto;
+}
+
+.fa-copyright {
+    font-size: 1em;
+}
+
 /*PÁGINA FIN_TEST_INVITADO==============================================================*/
 .reg_invitado {
     display: flex;
@@ -798,18 +806,21 @@ i {
     }
     
     .superlogo {
-        height: 34em;
+        height: 28em;
         margin-top: 10em;
     }
 
     .abajo {
-        height: 25%;    
+        height: 30%;    
         margin-left: 50%;    
     }
 
     .odd, .even {
         flex-direction: column;
         align-items: center;
+        height: auto;
+        flex: 1;
+        gap: 1em;
     }
 
     .odd {
@@ -817,7 +828,7 @@ i {
     }
 
     .logos {
-        height: 36%;
+        height: 33vh;
         margin-top: 6em;
     }
 
@@ -834,18 +845,19 @@ i {
     }
 
     .banderita {
-        height: 50%;
+        height: 50vh;
         margin: 0 auto;
     }
 
     .medallas {
         margin-top: 6.5em;
         margin-left: 7.5em;
-        width: 100%;
+        width: 66vw;
+        aspect-ratio: 1/1;
     }
 
     .podium {
-        height: 85%;
+        height: 50vh;
         margin: 0 auto;
     }
 
@@ -863,22 +875,28 @@ i {
     }
 
     .informatico {
-        height: 50%;
+        height: 50vh;
         margin-left: 6em;    
     }
 
+    .parte_final {
+        flex-direction: column;
+    }
+
     .adios {
-        height: 60%;
+        height: 50%;
         margin: 0 auto;
     }
 
     .star_register {
         width: 40%;
-        margin-top: 7em;
+        margin-top: 0em;
     }
 
     /*FOOTER=======================================================*/
-    
+    .brands {
+        width: 20%;
+    }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .reg_invitado {
