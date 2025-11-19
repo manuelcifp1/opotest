@@ -689,13 +689,19 @@ i {
   .invitacion_al_registro {
     flex-direction: column;
     gap: 0%;
-    margin-top: 0%;
+    margin-top: 25%;
     height: 100%;    
   }
 
   .invitadoReg {
-    height: 50%;    
-  }  
+    height: 55vh;
+        
+  }
+  
+  .reg_invitado {
+    flex: 1;
+    height: auto;
+  }
 
   /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
   .final_test {
