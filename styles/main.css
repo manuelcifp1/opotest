@@ -554,12 +554,22 @@ i {
 @media screen  and (max-width: 480px) {
   /*PÁGINA INICIO================================================*/ 
 
-  /*HEADER*/
-
-  /*Primera sección*/
+  /*header*/  
   .logo {
     width: 28%;
-  }   
+  }
+
+  /*Todas las secciones*/
+  .odd, .even {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .odd {
+    flex-direction: column-reverse;
+  }
+  
+  /*Primera sección*/
   .llegada {
     flex-direction: column;
     justify-content: center;
@@ -576,17 +586,7 @@ i {
   .abajo {
     height: 33%;
     margin:0 auto;    
-  }
-
-  /*Todas las secciones*/
-  .odd, .even {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .odd {
-    flex-direction: column-reverse;
-  }
+  }  
 
   /*Segunda sección*/
   .saludo {
@@ -685,8 +685,7 @@ i {
     font-size: 13px;
   }
   
-  /*PÁGINA FIN_TEST_INVITADO=============================================*/ 
-
+  /*PÁGINA FIN_TEST_INVITADO=============================================*/
   .invitacion_al_registro {
     flex-direction: column;
     gap: 0%;
@@ -695,8 +694,7 @@ i {
   }
 
   .invitadoReg {
-    height: 55vh;
-        
+    height: 55vh;        
   }
   
   .reg_invitado {
@@ -730,19 +728,18 @@ i {
     font-size: 1.4em;
   }
 
-    /*PÁGINA MEDALLA========================================================================*/
+  /*PÁGINA MEDALLA========================================================================*/
   main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   }
-
   
   .toma_medalla {
     flex-direction: column;
     justify-content: space-between;
-    flex: 1; /* Esto hará que tome el espacio restante de main */
-    height: auto; /* Anula el 95vh que lo limitaba */        
+    flex: 1;
+    height: auto;       
   }
 
   .entrega_de_premios {
@@ -931,6 +928,23 @@ i {
         margin-top: 1em;
         margin-bottom: 2em;
         margin-left: 7em;    
+    }
+
+    /*PÁGINA ADMIN===========================================*/
+    .enlaces_prueba a {
+        font-size: 0.9em;
+    }
+
+    .enlaces_prueba {
+        margin-left: 5em;
+    }
+
+    .aBlue {
+        padding-right: 0.2em;
+    }
+
+    .adminBlue {
+        font-size: 1.1em;
     }
 
 }
