@@ -146,10 +146,14 @@
     justify-content: center;        
   }
 
+  .recien_llegado {
+    flex-direction: column;
+  }
+
   .jubiloso {
-    width: 32vh;
+    width: 36vh;
     margin-left: 0em;
-    margin-top: 8em;
+    margin-top: 4em;
   }
 
   .card-carousel {
