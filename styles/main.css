@@ -69,7 +69,7 @@ header::after {
 }
 
 .logo {
-    width: 13%;        
+    width: 16%;        
     margin-left: 1%;       
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
 }
@@ -708,27 +708,25 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 95vh;
+    align-items: center;    
     gap: 1.9em;
+    flex: 1;
+    height: auto;
   }
 
   .las_notas {
     flex-direction: column;
-    gap: 3.5%;
-    margin-bottom: -15%;
+    gap: 6%;    
   }
 
   .resultados {
-    height: 45%;
-    margin-left: 1.8em;
-    margin-top: 3em;
+    height: 50vh;    
   }
 
   .resultados_test {
     width: 90%;
     height: 30%;
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
     /*PÁGINA MEDALLA========================================================================*/
