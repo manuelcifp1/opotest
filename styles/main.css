@@ -786,6 +786,11 @@ i {
 
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
+    /*HEADER=======================================================*/
+    .logo {
+        width: 22%;
+    }
+
     /*PÁGINA INICIO================================================*/
     .llegada {
         flex-direction: column;    
@@ -871,6 +876,9 @@ i {
         width: 40%;
         margin-top: 7em;
     }
+
+    /*FOOTER=======================================================*/
+    
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .reg_invitado {

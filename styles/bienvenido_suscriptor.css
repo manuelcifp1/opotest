@@ -182,7 +182,7 @@
     .jubiloso {
         width: 37vh;
         margin-left: 0em;
-        margin-top: 8em;
+        margin-top: 6em;
     }
 
     .card-carousel {
@@ -194,9 +194,15 @@
     }
 
     .nav-arrow {
-        pointer-events: none; /* no clickeable */
-        opacity: 0.4; /* más apagadas visualmente */
+        pointer-events: none;
+        opacity: 0.4;
         cursor: default;
+    }
+
+    .recien_llegado {
+        flex-direction: column;
+        margin-bottom: 0%;
+        gap: 0;
     }
 
 }
