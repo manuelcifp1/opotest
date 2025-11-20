@@ -554,6 +554,22 @@ i {
     padding: 0.2em;
 }
 
+/*ajustes finales==================================*/
+body.simple-layout {
+  overflow-y: auto;
+}
+
+/* Oculta la barra de scroll vertical en navegadores basados en WebKit (Chrome, Edge, Safari) */
+body.simple-layout::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Para Firefox */
+body.simple-layout {
+  scrollbar-width: none;
+}
+
 
 /*MEDIA QUERY====================================================================================================================*/
 
