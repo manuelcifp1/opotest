@@ -207,15 +207,19 @@
 
 /*Tablets grandes y laptops (768px a 1199px)*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .recien_llegado {
+        gap: 0.4em;
+    }
+    
     .jubiloso {
-        width: 53vh;
-        margin-left: 0em;
+        width: 49vh;
+        margin-left: 0.9em;
         margin-top: 8em;
     }
 
     .card-carousel {
         font-size: 1.5em;
-        margin-right: 1em;
+        margin-right: 0.8em;
         max-width: 45rem;
     }
 
