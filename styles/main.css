@@ -25,8 +25,7 @@
 html, body {
     height: 100%;        
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    scroll-snap-type: y mandatory;    
     overflow-x: hidden;
 }
 
@@ -1172,9 +1171,43 @@ i {
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     /* Ajustes específicos para portátiles modernos (el mío) */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    body.simple-layout main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  body.simple-layout section {
+    flex: 1 0 auto;
+    height: auto;
+  }
+
+  body.simple-layout footer.foot {
+    flex-shrink: 0;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+  }
+
+    
 
     /*HEADER==================================*/
-    
+    .logo {
+        width: 14%;
+    }
     
     /*INDEX - PRIMERA SECCIÓN========================================*/    
     .abajo {
@@ -1205,6 +1238,11 @@ i {
         margin-top: 0.3%;
     }
 
+    section.ultima {
+    flex: 1;
+    height: auto;
+    }
+
     /*FOOTER======================================================*/
     .brands {
         gap: 0.1em;
@@ -1214,15 +1252,20 @@ i {
         font-size: 1em;
     }
 
+    footer .foot {
+        scroll-snap-align: end;
+        scroll-snap-stop: always;
+        flex-shrink: 0;
+    }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .invitacion_al_registro {
-        margin-top: 3%;
+        margin-top: 7%;
         margin-bottom: -1.2%;
     }
     
     .invitadoReg {
-        height: 80%;
+        height: 80vh;        
     }
 
     /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
@@ -1232,13 +1275,13 @@ i {
     }
     
     .resultados {
-        height: 80%;
-        margin-top: 6em;
+        height: 70%;
+        margin-top: 4em;
     }
     
     .resultados_test {
         width: 30%;
-        height: 40%;
+        height: 55%;
     }
 
     /*PÁGINA MEDALLA=============================================*/
