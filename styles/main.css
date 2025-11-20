@@ -1321,6 +1321,12 @@ body.simple-layout {
         width: 10%;
     }
 
+    body.snap-end-fix .snap-filler {
+    height: 1px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
     
 
 }

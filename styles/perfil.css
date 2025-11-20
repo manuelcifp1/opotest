@@ -62,8 +62,7 @@
     justify-content: center;
     align-items: center;
     gap: 7em;
-    width: 75vw;
-  
+    width: 75vw;  
 }
 
 .carnets_oposito {   
@@ -229,6 +228,7 @@
   .dos {
     height: 44vh;
   }
+
   /*Tercera sección*/
   .medallero {
     justify-content: center;
@@ -469,6 +469,15 @@
 
   .estadisticas {
     height: 95vh;
+  }
+
+  .iconsPerfil {
+    font-size: 1em;
+  }
+
+  .iconsPerfiltodos {
+    margin-left: 2em;
+    padding: 0.38em;
   }
 
 }
