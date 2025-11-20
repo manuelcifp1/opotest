@@ -1003,6 +1003,12 @@ i {
         width: 13.5%;
     }
 
+    /*FOOTER===================================================*/
+    .brands {
+        padding: 0.5em;
+        width: 15%;
+    }
+
     /*PÁGINA INICIO================================================*/    
     header {
         height: 13vh;
@@ -1086,9 +1092,6 @@ i {
         margin-top: 7em;
         margin-right: 7em;
     } 
-    
-    /*BIENVENIDO SUSCRIPTOR================================================*/
-    
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .reg_invitado {
@@ -1130,13 +1133,17 @@ i {
     }
 
     .medallita {
-        height: 49vh;
+        height: 75vh;
         margin-top: 5em;        
     }
 
     .premio_gordo {
         height: 30vh;
         width: 80%;        
+    }
+
+    .boton_medalla {
+        font-size: 1.3em;
     }
 
 }
