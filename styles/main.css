@@ -999,9 +999,12 @@ i {
 /*Tablets grandes y laptops (768px a 1199px)*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     /*HEADER==================================*/
-    .logo {
-        width: 13.5%;
+    header {
+        height: 10vh;
     }
+    .logo {
+        width: 13%;
+    }    
 
     /*FOOTER===================================================*/
     .brands {
@@ -1146,6 +1149,24 @@ i {
         font-size: 1.3em;
     }
 
+/*PÁGINA ADMIN===================================================*/
+    #logoBlue {
+        width: 15%;
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+    #sectionBlue {               
+        height: 95vh;  
+    }
+
+    footer.foot {
+        height: 5vh;
+    }
 }
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
