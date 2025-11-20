@@ -998,6 +998,11 @@ i {
 
 /*Tablets grandes y laptops (768px a 1199px)*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    /*HEADER==================================*/
+    .logo {
+        width: 13.5%;
+    }
+
     /*PÁGINA INICIO================================================*/    
     header {
         height: 13vh;
@@ -1010,8 +1015,9 @@ i {
     }
     
     .superlogo {
-        margin-left: 20%;
-        height: 40em;
+        margin-left: 12%;
+        height: 28em;
+        margin-top: 4%;
     }
 
     .abajo {
@@ -1079,7 +1085,10 @@ i {
         width: 25%;
         margin-top: 7em;
         margin-right: 7em;
-    }    
+    } 
+    
+    /*BIENVENIDO SUSCRIPTOR================================================*/
+    
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .reg_invitado {
