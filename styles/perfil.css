@@ -171,12 +171,13 @@
     scroll-snap-align: start;   /* Lo alinea como destino de scroll */
     scroll-snap-stop: always;    
 }
-
+/*Evita el desbordamiento de los párrafos*/
 .cuadro.palabras {
-  overflow-y: auto;
-  overflow-x: hidden;
-  word-break: break-word;
-  overflow-wrap: break-word;
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /*MEDIA QUERY=================================================================================*/
