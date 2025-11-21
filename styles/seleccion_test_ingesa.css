@@ -55,9 +55,6 @@ input[type="radio"], input[type="checkbox"] {
     border: solid 5px var(--azul_principal);    
     padding: 0;
     background-color: white;
-}
-
-.registrate select {
     font-size: 0.8em;
 }
 
@@ -95,9 +92,10 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .formulario_test input[type="submit"] {
-    width: 5.5em;
+    width: 6em;
     background-color: var(--naranja_filo_brillo_logo);
-    cursor: pointer;    
+    cursor: pointer;
+    height: 2.5em;            
 }
 
 .formulario_test input[type="submit"]:hover {
@@ -143,10 +141,34 @@ body.diferente {
         font-size: 0.6em;
     }
 
-    
+}
 
 
-    
+/*Laptops grandes y escritorios (de 1200px a 1999px)*/
+/* Ajustes específicos para portátiles modernos (el mío) */
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
+    .titulo_seleccion_test {
+        font-size: 1.3em;
+    }
+
+    legend {
+        font-size: 0.7em;
+    }
+
+    .formulario_test input[type="submit"] {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .checkbox-grid input[type="checkbox"] {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .checkbox-grid {
+        font-size: 0.8em;
+    }
+
 }
 
 

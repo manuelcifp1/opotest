@@ -204,15 +204,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Crear los 34 checkboxes al cargar
   for (let i = 1; i <= 34; i++) {
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.name = "temasSeleccionados[]";
-    checkbox.value = i;
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(` T${i}`));
-    checkboxContainer.appendChild(label);
-  }
+  const label = document.createElement("label");
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.name = "temasSeleccionados[]";
+  checkbox.value = i;
+  
+  // Si el número es de una cifra, añade un 0 delante
+  const numeroFormateado = i < 10 ? `0${i}` : `${i}`;
+  
+  label.appendChild(checkbox);
+  label.appendChild(document.createTextNode(` T${numeroFormateado}`));
+  checkboxContainer.appendChild(label);
+}
+
 
   // Mostrar/ocultar los checkboxes según selección
   temasSelect.addEventListener("change", function () {
