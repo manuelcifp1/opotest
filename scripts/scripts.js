@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ocultar al hacer clic fuera del formulario
   document.addEventListener("click", (e) => {
-    if (!e.target.closest(".registrate")) {
+    if (!e.target.closest(".logueate")) {
       ocultarSoldados();
     }
   });
