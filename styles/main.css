@@ -103,8 +103,9 @@ i {
     height: 95vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;        
+    justify-content: center;
+    align-items: center;
+    gap: 10%;        
 }
 
 .snapping {
@@ -146,15 +147,12 @@ i {
 
 /*INDEX - SEGUNDA SECCIÓN===========================================================================*/
 .saludo {
-    width: 35%;           
-    margin-left: 10%;
-    margin-top: 4%;    
+    width: 35%;       
 }
 
 /*logos de organismos*/
 .logos {
-    height: 60%;
-    margin-top: 3%;
+    height: 60%;    
     aspect-ratio: 1/1;
     border: 10px var(--azul_principal) ridge;    
     border-radius: 200%;
@@ -177,14 +175,11 @@ i {
 
 /*INDEX - TERCERA SECCIÓN====================================================================*/
 .banderita {
-    height: 65%;
-    margin-top: 5%;
-    margin-right: 9em;
+    height: 65%;    
 }
 
 .menuvideo {
-    width: 70%;
-    margin-left: 15em;
+    width: 80%;    
     filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
 }
 
@@ -217,8 +212,7 @@ i {
 
 /*INDEX - QUINTA SECCIÓN=================================================================================*/
 .videoai {
-    width: 30%;
-    margin-top: 1%;
+    width: 30%;    
     margin-left: 7%;  
     filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
 }
@@ -226,7 +220,7 @@ i {
 .informatico {
     height: 72%;
     margin-top: 3%;
-    margin-left: 8%;   
+       
 }
 
 /*INDEX - SEXTA SECCIÓN==============================================================================*/
@@ -429,7 +423,7 @@ i {
 .final_test {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 95vh;
     background-image: url('img/fondo_mosaico_blanco.png');
@@ -1216,9 +1210,7 @@ body.simple-layout {
     flex-shrink: 0;
     scroll-snap-align: end;
     scroll-snap-stop: always;
-  }
-
-    
+  }    
 
     /*HEADER==================================*/
     .logo {
@@ -1230,10 +1222,18 @@ body.simple-layout {
         margin-top: 27%;        
     }
 
+    /*INDEX - SEGUNDA SECCIÓN============================================*/
+    
+
     /*INDEX - TERCERA SECCIÓN==========================================*/
     .banderita {
-        height: 80%;
-    }
+        height: 73%;
+        margin-right: 15%;
+    } 
+
+    .menuvideo {
+        margin-left: 25%;
+    }    
 
     /*INDEX - CUARTA SECCIÓN==========================================*/
     .podium {
@@ -1242,7 +1242,13 @@ body.simple-layout {
 
     /*INDEX - QUINTA SECCIÓN===================================================*/
     .informatico {
-        height: 80%;
+        height: 75%;
+        margin-left: 30%;
+    }
+
+    .videoai {
+        width: 5%;
+        margin-left: 13%;
     }
 
     /*INDEX - SEXTA SECCIÓN*/
@@ -1262,6 +1268,7 @@ body.simple-layout {
     /*FOOTER======================================================*/
     .brands {
         gap: 0.1em;
+        width: 10%;
     }
 
     .fa-copyright {
@@ -1284,6 +1291,10 @@ body.simple-layout {
         height: 80vh;        
     }
 
+    .star_register {
+        width: 25%;
+    }
+
     /*PÁGINA FIN_TEST_SUSCRIPTOR=============================================*/
     .las_notas {
         margin-top: 2%;
@@ -1291,22 +1302,28 @@ body.simple-layout {
     }
     
     .resultados {
-        height: 70%;
+        height: 75vh;
         margin-top: 4em;
     }
     
     .resultados_test {
-        width: 30%;
+        width: 25%;
         height: 55%;
+        font-size: 1.5em;
+        padding: 0.5em;
     }
 
     /*PÁGINA MEDALLA=============================================*/
     .entrega_de_premios {
         margin-top: 0.15%;
     }
+
+    .boton_medalla {
+        font-size: 1.4em;
+    }
     /*PÁGINA ADMIN=============================================*/
     #logoBlue {
-        width: 14%;
+        width: 11%;
     }
 
     .sectionBlue {
@@ -1314,7 +1331,7 @@ body.simple-layout {
     }
 
     .burgerOrange {
-        top: 2em;
+        top: 1.6em;
     }
 
     .aBlue {
