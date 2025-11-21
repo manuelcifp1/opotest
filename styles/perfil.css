@@ -132,7 +132,6 @@
   width: 100%;  
 }
 
-
 .perfil_main h1 {
     color: var(--naranja_principal);
     text-shadow:
@@ -179,7 +178,6 @@
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
 
 /*MEDIA QUERY=================================================================================*/
 
