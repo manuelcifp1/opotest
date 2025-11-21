@@ -286,8 +286,21 @@ body.no-snap {
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
 
    .tarjetas_oposiciones {
-        width: 76.9%;
-   }
+        width: 72%;
+        grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
+        gap: 10px;
+    }
+
+    .tarjeta_oposicion {
+        width: 100%; /* Aprovecha el ancho de la celda del grid */
+        height: 260px; /* proporcional al nuevo tamaño */
+    }
+
+    .tarjeta_oposicion .escudo {
+        width: 100%;
+        height: 200px;
+    }
+   
 
    html, body {
     height: auto;
@@ -309,6 +322,23 @@ body.no-snap {
   .ciudades_hermanas {
     margin-top: 0.5%;
     margin-bottom: 1%;
+    font-size: 1.5em;
   }
+
+  .tarjeta_oposicion p {
+    font-size: 0.9em;
+  }
+
+  .tarjetas_oposiciones a:nth-child(2) .tarjeta_oposicion .escudo {    
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;    
+    }
+
+    .tarjetas_oposiciones a:nth-child(7) .tarjeta_oposicion .escudo {    
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;    
+    }
 
 }
