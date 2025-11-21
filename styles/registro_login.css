@@ -4,8 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
+    justify-content: center;    
     padding-top: 4em;
     padding-bottom: 2em;
     background-image: url('img/fondo_mosaico_blanco.png');
@@ -13,12 +12,27 @@
     background-size: 100px;
 }
 
+.logueate {
+    width: 20%;
+    max-width: 30em;
+    height: auto;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;    
+    font-size: 1.3em;
+    color: var(--azul_principal); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .entrada {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    margin-top: 24vh;
+    align-items: center;    
 }
 
 .soldado {    
@@ -110,11 +124,9 @@ input[type="submit"] {
     font-weight: 600;
     font-style: normal;    
     font-size: 1em;
-    color: var(--azul_principal);
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    color: var(--azul_principal);    
     text-align: center;
-    height: 1.8em;
+    height: 2em;
     background-color: var(--naranja_principal); 
     width: 5em;
     margin-top: 1.5em;
@@ -248,7 +260,7 @@ label {
 /* Ajustes específicos para portátiles modernos (el mío) */
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     .formulario_registro {
-        height: 65vh;
+        height: 55vh;
     }
 
     input[type="submit"] {

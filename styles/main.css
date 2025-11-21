@@ -1336,12 +1336,17 @@ body.simple-layout {
 
     .aBlue {
         width: 10%;
+        font-size: 1.3em;
     }
 
     body.snap-end-fix .snap-filler {
     height: 1px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+  }
+
+  .adminBlue {
+    font-size: 1em;
   }
 
     
