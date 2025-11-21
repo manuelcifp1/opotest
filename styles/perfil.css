@@ -132,7 +132,6 @@
   width: 100%;  
 }
 
-
 .perfil_main h1 {
     color: var(--naranja_principal);
     text-shadow:
@@ -171,6 +170,14 @@
 .footPerfil {
     scroll-snap-align: start;   /* Lo alinea como destino de scroll */
     scroll-snap-stop: always;    
+}
+/*Evita el desbordamiento de los párrafos*/
+.cuadro.palabras {
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /*MEDIA QUERY=================================================================================*/
