@@ -554,6 +554,22 @@ i {
     padding: 0.2em;
 }
 
+/*ajustes finales==================================*/
+body.simple-layout {
+  overflow-y: auto;
+}
+
+/* Oculta la barra de scroll vertical en navegadores basados en WebKit (Chrome, Edge, Safari) */
+body.simple-layout::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Para Firefox */
+body.simple-layout {
+  scrollbar-width: none;
+}
+
 
 /*MEDIA QUERY====================================================================================================================*/
 
@@ -585,7 +601,7 @@ i {
   }
   
   .superlogo {
-    height: 20em;
+    height: 25%;
     margin: 0 auto;
     margin-top: 10em;
   }
@@ -1304,6 +1320,12 @@ i {
     .aBlue {
         width: 10%;
     }
+
+    body.snap-end-fix .snap-filler {
+    height: 1px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 
     
 

@@ -62,8 +62,7 @@
     justify-content: center;
     align-items: center;
     gap: 7em;
-    width: 75vw;
-  
+    width: 75vw;  
 }
 
 .carnets_oposito {   
@@ -229,10 +228,15 @@
   }
   /*Segunda sección*/
   .consulta_estadisticas {
-    height: 33vh;
+    height: 25vh;
     margin-bottom: 45px;
     margin-top: 30px;
-  }  
+  } 
+  
+  .dos {
+    height: 44vh;
+  }
+
   /*Tercera sección*/
   .medallero {
     justify-content: center;
@@ -273,9 +277,9 @@
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     .persona h1 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    margin-top: 3em;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        margin-top: 3em;
     }
   
     .datos {
@@ -298,7 +302,7 @@
         padding-left: 0.1em;
         padding: -1em;
         margin-bottom: -15vh;
-    }
+    }    
 
     .carnets_oposito {
         height: 36.7vh;
@@ -311,13 +315,13 @@
     }
 
     .consulta_estadisticas {
-        height: 33vh;
+        height: 15vh;
         margin-bottom: 45px;
         margin-top: -4em;
     }  
 
     .medallero {
-        justify-content: center;
+        justify-content: center;        
     }
 
     .medallero h1 {
@@ -473,6 +477,15 @@
 
   .estadisticas {
     height: 95vh;
+  }
+
+  .iconsPerfil {
+    font-size: 1em;
+  }
+
+  .iconsPerfiltodos {
+    margin-left: 2em;
+    padding: 0.38em;
   }
 
 }
