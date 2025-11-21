@@ -77,11 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
     "Extremadura": "mapa_extremadura.png",
     "Galicia": "mapa_galicia.png",
     "La Rioja": "mapa_la_rioja.png",
-    "Comunidad de Madrid": "mapa_madrid.png",
+    "Cdad. de Madrid": "mapa_madrid.png",
     "Murcia": "mapa_murcia.png",
     "Navarra": "mapa_navarra.png",
     "País Vasco": "mapa_pais_vasco.png",
-    "Comunidad Valenciana": "mapa_valencia.png"
+    "Cdad. Valenciana": "mapa_valencia.png"
   };
 
   const enlaces = document.querySelectorAll("#contenedor_menu a");
