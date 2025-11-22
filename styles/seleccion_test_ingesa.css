@@ -119,8 +119,13 @@ body.diferente {
 @media screen  and (max-width: 480px) {
 
     fieldset[id="temas_personalizados_fieldset"] {
-        width: 95% !important;
+        width: 95%;
         overflow-x: hidden;
+    }
+    
+    #formulario_test {
+        width: 85%;
+        
     }
 
     legend {
@@ -128,17 +133,28 @@ body.diferente {
     }
 
     .titulo_seleccion_test {
-        font-size: 1.5em;
-        margin-top: 13%;
+        font-size: 1.2em;
+        margin-top: -33%;
         margin-bottom: -5%;
+        
     }
 
     .formulario_test input[type="submit"] {
         font-size: 0.8em;
+        text-align: center;
+        width: 50%;
+        margin-top: 1%;        
     }
 
     .formulario_test option {
         font-size: 0.6em;
+    }
+
+    .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.4em;
+        font-size: 0.72em; /* Opcional: ajusta si los textos se ven muy apretados */
     }
 
 }

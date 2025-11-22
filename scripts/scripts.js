@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkboxContainer = document.getElementById("checkboxContainer");
 
   // Crear los 34 checkboxes al cargar
-  for (let i = 1; i <= 34; i++) {
+  for (let i = 1; i <= 31; i++) {
   const label = document.createElement("label");
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
