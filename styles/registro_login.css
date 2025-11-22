@@ -192,9 +192,17 @@ label {
         display: none;
     }
 
-    .registrate {
-        width: 96%;
+    .logueate {
+        width: 50vw;
     }
+
+    .registrate {
+        width: 58%;
+    }
+
+    .registrate .fieldset {
+        width: 50vw;
+    }    
 
     input {
         width: 15em;
@@ -205,11 +213,12 @@ label {
     }
 
     .info {
-        padding: 0em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding: 1.5em;        
         font-size: 1.3em;
+        text-align: center;        
     }
+
+    
 
     .formulario_registro {
         flex: 1;
@@ -219,10 +228,6 @@ label {
 
     input[type="submit"] {
         padding: 0;
-    }
-
-    .info {
-        font-size: 2em;
     }
 
 }
