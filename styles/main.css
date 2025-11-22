@@ -690,8 +690,8 @@ body.simple-layout {
     padding: 4px;
   }
 
-  .enlaces_prueba {
-    margin-left: 70px;
+  .enlaces_prueba {    
+    display: none;
   }
 
   .enlaces_prueba a {
@@ -732,7 +732,7 @@ body.simple-layout {
 
   .las_notas {
     flex-direction: column;
-    gap: 6%;    
+    gap: 5vh;    
   }
 
   .resultados {
@@ -741,7 +741,7 @@ body.simple-layout {
 
   .resultados_test {
     width: 90%;
-    height: 30%;
+    height: 18vh;
     font-size: 1.4em;
   }
 
@@ -792,7 +792,7 @@ body.simple-layout {
   }
 
   .burgerOrange {
-    top: 30px;
+    top: 25%;
   }
 
   .aBlue {
@@ -907,6 +907,10 @@ body.simple-layout {
         width: 20%;
     }
 
+    .enlaces_prueba {    
+        display: none;
+    }
+
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .invitadoReg {
         height: 48vh;        
@@ -989,6 +993,7 @@ body.simple-layout {
     /*PÁGINA ADMIN===========================================*/
     .enlaces_prueba a {
         font-size: 0.9em;
+        display: none;
     }
 
     .enlaces_prueba {
