@@ -134,7 +134,17 @@
 
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
-    #contenedor_menu {
+
+  .encabezado .titulo {
+    font-size: 2em;
+    margin-top: -7vh;
+  }
+
+  .encabezado {
+    margin-top: 1vh;
+  }
+
+  #contenedor_menu {
     transform: translateY(-100%);
     width: 100%;    
   }
@@ -149,23 +159,23 @@
   }
 
   .ceuta_melilla {
-    font-size: 1.6em;
+    font-size: 1.3em;
     padding-bottom: 1.5em;    
   }
 
   #contenedor_menu ul li a {
-    font-size: 1.6em;        
+    font-size: 1.3em;        
   }
   
   #contenedor_menu ul li {
     padding-bottom: 1.3em;
   }
 
-  .encabezado {
-    margin-top: 4em;
+  .contenedor_listas {
+    width: 100%;
   }
+  
 }
-
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     #contenedor_menu {
