@@ -238,6 +238,20 @@ label {
         width: 75%;
     }
     
+    .logueate {
+        width: 70%;
+    }
+
+    .soldado-izq {
+        left: 12%;
+        width: 20%;
+    }
+
+    .soldado-der {
+        right: 12%;
+        width: 20%;
+    }
+    
 }
 
 /*Tablets grandes y laptops (768px a 1199px)*/

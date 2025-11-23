@@ -805,7 +805,7 @@ body.simple-layout {
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     /*HEADER=======================================================*/
     .logo {
-        width: 22%;
+        width: 20%;
     }
 
     /*PÁGINA INICIO================================================*/
@@ -815,13 +815,14 @@ body.simple-layout {
     }
     
     .superlogo {
-        height: 28em;
+        height: 30%;
         margin-top: 10em;
     }
 
     .abajo {
         height: 30%;    
-        margin-left: 50%;    
+        margin-left: 50%;
+        margin-top: 50%;    
     }
 
     .odd, .even {
@@ -904,7 +905,8 @@ body.simple-layout {
 
     /*FOOTER=======================================================*/
     .brands {
-        width: 20%;
+        width: 30%;
+        padding: 1em;
     }
 
     .enlaces_prueba {    
