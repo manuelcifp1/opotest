@@ -949,8 +949,8 @@ body.simple-layout {
     }
 
     .resultados_test {
-    width: 90%;
-    height: 30%;
+    width: 60%;
+    height: 20%;
     font-size: 1.7em;
     }
 
@@ -966,21 +966,22 @@ body.simple-layout {
 
     .medallita {
         height: 45vh;
-        margin-top: 20em;        
+        margin-top: 15em;        
     }  
 
     .premio_gordo {
-        height: 40vh;
-        width: 70%;
+        height: 50vh;
+        aspect-ratio: 1/1;
         margin-top: 0%;    
     }
 
     .ventana_medalla {
         height: 50%;
+        aspect-ratio: 1/1;
     }
 
     .boton_medalla {
-        width: 40%;
+        width: 25%;
         font-size: 1.2em;
         margin-top: 1em;
         margin-bottom: 1em;            
