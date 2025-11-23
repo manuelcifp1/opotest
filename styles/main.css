@@ -1210,6 +1210,33 @@ body.simple-layout {
     footer.foot {
         height: 5vh;
     }
+
+    body.simple-layout,
+    body.snap-end-fix {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main,
+    main.perfil_main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer.foot,
+    footer.footPerfil {
+        margin-top: auto;
+        scroll-snap-align: end;
+        scroll-snap-stop: always;
+    }
+
+    body.snap-end-fix .snap-filler {
+        height: 1px;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 }
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/

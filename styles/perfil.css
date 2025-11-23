@@ -434,6 +434,35 @@
         width: 84vw;        
     }
 
+    body.simple-layout,
+    body.snap-end-fix {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main,
+    main.perfil_main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer.foot,
+    footer.footPerfil {
+        margin-top: auto;
+        scroll-snap-align: end;
+        scroll-snap-stop: always;
+    }
+
+    body.snap-end-fix .snap-filler {
+        height: 1px;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+
+
 }
 
 
