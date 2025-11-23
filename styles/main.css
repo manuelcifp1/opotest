@@ -1068,7 +1068,7 @@ body.simple-layout {
     
     .superlogo {
         margin-left: 12%;
-        height: 28em;
+        height: 22em;
         margin-top: 4%;
     }
 
@@ -1083,30 +1083,34 @@ body.simple-layout {
     }
 
     .saludo {
-        width: 40%;
+        width: 42%;
         margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        margin-left: 5%;
     }
 
     .logos {
-        height: 45%;
+        height: 50%;
         margin-top: 6em;
         margin-right: 13%;
     }
 
     .menuvideo {
         margin: 0 auto;
-        margin-left: 4em;
+        margin-left: 2em;
         margin-top: 5em;
-        width: 83%;
+        width: 90%;
     }
 
     .banderita {
-        height: 50%;
-        margin-right: 7em;
+        height: 70%;
+        margin-right: 3em;
     }
 
     .podium {
-        height: 70%;
+        height: 80%;
+        margin-top: 0;
         margin-left: 10em;
     }
 
@@ -1114,23 +1118,26 @@ body.simple-layout {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-left: 10em;
-        margin-top: 4em;    
+        align-items: center;       
+        margin-top: 4em;           
     }
 
     video {
-        width: 33em;
+        width: 28em;        
+        margin-right: -30%;
     }
 
     .informatico {
-        height: 60%;
-        margin-left: 2em;    
+        height: 70%;
+        margin-left: -10%;
+        margin-right: -15%;    
     }
 
     .adios {
-        height: 75%;
-        margin-left: 15em;
+        height: 86%;
+        margin-left: 10em;
+        margin-bottom: -18%;
+        margin-top: -10%;
     }
 
     .star_register {
