@@ -68,7 +68,7 @@ header::after {
 }
 
 .logo {
-    width: 16%;        
+    height: 80%;        
     margin-left: 1%;       
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
 }
@@ -1219,7 +1219,7 @@ body.simple-layout {
 
     /*HEADER==================================*/
     .logo {
-        width: 11%;
+        width: 10%;
     }
     
     /*INDEX - PRIMERA SECCIÓN========================================*/    
