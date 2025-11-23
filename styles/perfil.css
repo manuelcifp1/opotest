@@ -371,10 +371,10 @@
 
 /*Tablets grandes y laptops (768px a 1199px)*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    h1 {
+    .datos h1 {
         font-size: 1.4em;
-    margin-top: 5.5em; /* ajusta según el alto real del header */
-    margin-bottom: -5em;   
+        margin-top: 10%; /* ajusta según el alto real del header */
+        height: 3vh;   
     }
   
     .datos {
@@ -399,12 +399,12 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         gap: 5%;        
     }
 
     .palabras {
-        width: 45vw;
+        width: 50vw;
         font-size: 0.6em;
         height: 32vh;                        
     }
@@ -416,7 +416,7 @@
     }
 
     .carnets_oposito {
-        height: 33vh;
+        height: 31vh;
         width: 33.7vw;    
     }
 
@@ -445,17 +445,28 @@
     }
 
     .medallero h1 {
-        margin-top: 10px;
+        margin-top: 10%;
         margin-bottom: 25px;
+        font-size: 1.4em;
     }
 
     .cuadro_medallas {
-        width: 84vw;
-        height: 60vh;        
+        width: 70%;
+                
     }
 
     .una_medalla {
         width: 75%;
+    }
+
+    .iconsPerfiltodos {
+        padding-left: 0.3em;
+        width: 10vw;
+        
+    }
+
+    .iconsPerfil {
+        font-size: 1em;
     }
 
     body.simple-layout,
