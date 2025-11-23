@@ -906,7 +906,7 @@ body.simple-layout {
     /*FOOTER=======================================================*/
     .brands {
         width: 30%;
-        padding: 1em;
+        padding: 0.5em;
     }
 
     .enlaces_prueba {    
@@ -1011,24 +1011,24 @@ body.simple-layout {
         font-size: 1.1em;
     }       
 
-    body.simple-layout {
+    body.simple-layout,
+    body.snap-end-fix {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        overflow-y: auto;
     }
 
-    body.simple-layout main {    
-        flex: 1 0 auto;
+    main,
+    main.perfil_main {
+        flex: 1;
         display: flex;
         flex-direction: column;
     }
 
-    body.simple-layout footer.foot {
+    footer.foot {
+        margin-top: auto;
         scroll-snap-align: end;
         scroll-snap-stop: always;
-        flex-shrink: 0;
-        margin-top: auto;
     }
 
     body.snap-end-fix .snap-filler {
@@ -1036,22 +1036,6 @@ body.simple-layout {
         scroll-snap-align: start;
         scroll-snap-stop: always;
     }
-
-    body.snap-end-fix {
-        min-height: 100vh;
-    }
-
-    footer.foot {
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-    }
-
-    main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
 
 }
 

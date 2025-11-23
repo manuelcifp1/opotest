@@ -339,53 +339,32 @@
 
     .noLine {
         font-size: 1.8em;
-    }
-
-    body.snap-end-fix .snap-filler {
-        height: 1px;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
-
-    body.simple-layout {
+    } 
+    
+    body.simple-layout,
+    body.snap-end-fix {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: auto;
-  }
+    }
 
-  body.simple-layout main {    
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  body.simple-layout footer.foot {
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-    flex-shrink: 0;
-    margin-top: auto;
-  }
-
-  body.snap-end-fix .snap-filler {
-    height: 1px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-
-  body.snap-end-fix {
-    min-height: 100vh;
-  }
-
-  footer.foot {
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-  }
-
-  main {
+    main,
+    main.perfil_main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    }
+
+    footer.foot,
+    footer.footPerfil {
+    margin-top: auto;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    }
+
+    .iconsPerfiltodos {
+        padding-left: 0.3em;
+        width: 10vw;
     }
 
 }
