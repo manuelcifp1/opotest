@@ -508,7 +508,6 @@
     .datos h1 {
         margin-top: 2em;
         font-size: 1.5em;
-
     }
     
     .carnets_oposito {
@@ -523,7 +522,7 @@
     }
 
     .dos {
-        width: 32vw;
+        width: 28vw;
     }
 
     .cuadro {
@@ -583,13 +582,35 @@
     font-size: 1em;
   }
 
-  .iconsPerfiltodos {
-    margin-left: 2em;
-    padding: 0.38em;
+  .iconsPerfiltodos {    
+    padding: 0.1em;    
   }
 
   .medallero h1 {
     font-size: 1.3em;
+  }
+
+  .perfil_main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .medallero {
+    flex: 1 0 auto;
+    padding-bottom: 2vh; /* da un pequeño respiro visual si lo deseas */
+    margin-bottom: 0;
+  }
+
+  .cuadro_medallas {
+    margin-bottom: 0; /* elimina el margen fijo previo */
+    padding-bottom: 1vh; /* opcional para separación visual suave */
+  }
+
+  footer.footPerfil {
+    margin-top: auto;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
   }
 
 }

@@ -1282,7 +1282,9 @@ body.simple-layout {
 
     /*HEADER==================================*/
     .logo {
-        width: 10%;
+        height: 7vh;
+        margin-left: 0.6em;
+        
     }
     
     /*INDEX - PRIMERA SECCIÓN========================================*/    
