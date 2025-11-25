@@ -160,11 +160,10 @@
 @keyframes cambio-color {
     0% {
         color: #3d36ca;
-        text-shadow: 0 0 5px #fe8525, 0 0 10px #fe8525, 0 0 15px #fe8525;
+        
     }
     100% {
-        color: #fe8525;
-        text-shadow: 0 0 5px #3d36ca, 0 0 10px #3d36ca, 0 0 15px #3d36ca;
+        color: #fe8525;        
     }
 }
 

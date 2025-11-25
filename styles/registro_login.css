@@ -4,9 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
-    padding-top: 4em;
-    padding-bottom: 2em;
+    justify-content: center;   
     background-image: url('img/fondo_mosaico_blanco.png');
     background-repeat: repeat;
     background-size: 100px;
@@ -160,7 +158,7 @@ input[type="submit"]:hover {
     font-style: normal;    
     font-size: 1.5em;
     color: var(--azul_principal);
-    padding: 1em;
+    padding: 0.5em;
     text-decoration: none;  
 }
 
@@ -173,7 +171,7 @@ input[type="submit"]:hover {
 .enlaceReg {
     font-size: 2em;
     animation: cambio-color 1.5s infinite alternate;
-    margin-bottom: 26%;
+    
 }
 
 label {
