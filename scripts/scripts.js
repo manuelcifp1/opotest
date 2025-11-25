@@ -1,24 +1,30 @@
 //Función para crear carruseles de imágenes====================================
+//En todas las funciones se usa DOMContentLoaded para esperar a la carga del DOM completo, una buena práctica.
 document.addEventListener("DOMContentLoaded", () => {
   function crearCarrusel(imagenes, selectorContenedor, ruta, claseImagen, intervalo) {
+
+    //Se localiza el contenedor en el DOM. Si no existe, se termina la ejecución de la función para evitar errores.
     const contenedor = document.querySelector(selectorContenedor);
     if (!contenedor) return;
-
+    //Esto controla la imagen que se muestra.
     let indice = 0;
-
+    //Función para vaciar el contenedor antes de cargar una nueva imagen.
     function mostrarSiguiente() {
       contenedor.innerHTML = "";
-
+      //Crea un nuevo elemento imagen...
       const img = document.createElement("img");
+      //...la ruta de la misma...
       img.src = `${ruta}${imagenes[indice]}`;
+      //...y una clase para estilos.
       img.classList.add(claseImagen);
-
+      //Se añade la imagen al contenedor
       contenedor.appendChild(img);
+      //Se incrementa el índice y cuando llega al final, vuelve a 0 con %, para que el carrusel no pare.
       indice = (indice + 1) % imagenes.length;
-
+      //Se programa la siguiente ejecución de la función.
       setTimeout(mostrarSiguiente, intervalo);
     }
-
+    //Se ejecuta la función la primera vez, luego sigue automáticamente.
     mostrarSiguiente();
   }
 
@@ -59,10 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Mapa menú=====================================================================
 document.addEventListener("DOMContentLoaded", () => {
+  //Selecciona la imagen principal con el mapa en blanco.
   const mapa = document.getElementById("mapa_ccaa");
-
+  //Si no existe el elemento mapa paramos la función para evitar errores.
   if (!mapa) return;
-
+  //Aquí se relaciona cada imagen de CA coloreada con el nombre de la misma.
   const nombreAArchivo = {
     "Andalucía": "mapa_andalucia.png",
     "Aragón": "mapa_aragon.png",
@@ -83,19 +90,20 @@ document.addEventListener("DOMContentLoaded", () => {
     "País Vasco": "mapa_pais_vasco.png",
     "Comunidad Valenciana": "mapa_valencia.png"
   };
-
+  //Selección de todos los enlaces que van a activar el cambio de mapa.
   const enlaces = document.querySelectorAll("#contenedor_menu a");
-
+  //Se le asigna un evento a cada enlace, la entrada del cursor.
   enlaces.forEach((enlace) => {
     enlace.addEventListener("mouseenter", () => {
+      //Se extrae el texto del enlace y se busca en el objeto nombreAArchivo.
       const nombre = enlace.textContent.trim();
       const archivo = nombreAArchivo[nombre];
-
+      //Si existe, se actualiza la ruta con el nombre del archivo.
       if (archivo) {
         mapa.src = `styles/img/mapas/${archivo}`;
       }
     });
-
+    //Otro evento para que vuelva el mapa en blanco cuando el cursor sale del enlace.
     enlace.addEventListener("mouseleave", () => {
       mapa.src = `styles/img/mapas/mapa_blanco.png`;
     });
@@ -104,25 +112,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Menú hamburguesa========================================================================
 document.addEventListener("DOMContentLoaded", () => {
+  //Selecciona el icono del menú hamburguesa.
   const botonBurger = document.querySelector(".contenedor_icono_burger");
-
+  //Si no existe, se cancela la función.
   if (!botonBurger) return;
-
+  //Se crea evento de click en el icono.
   botonBurger.addEventListener("click", () => {
+    //Alterna la visibilidad/invisibilidad de los contenedores del menú.
     document.getElementById("contenedor_oposito")?.classList.toggle("visible");
     document.getElementById("contenedor_menu")?.classList.toggle("visible");
+    //Alterna los iconos del menú hamburguesa y la X.
     botonBurger.classList.toggle("icono_cruz");
     botonBurger.classList.toggle("icono_barras");
   });
 });
 
 //Carrusel de tarjetas de instrucciones (bienvenido_suscriptor)====================================================
+//Permite navegar entre tarjetas usando las flechas dcha e izq.
 document.addEventListener("DOMContentLoaded", function () {
+  //Este es el NodeList con todas las tarjetas.
   const cards = document.querySelectorAll(".card");
+  //Las flechas de navegación.
   const leftArrow = document.querySelector(".left-arrow");
   const rightArrow = document.querySelector(".right-arrow");
+  //Y el índice de la tarjeta activa.
   let currentIndex = 0;
-
+  //Función que actualiza el estado de cada tarjeta con la clase "active" para la que vemos.
   function updateCards() {
     cards.forEach((card, index) => {
       card.classList.remove("active");
@@ -131,29 +146,30 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Oculta flechas si está en extremos
+    //Oculta flechas dcha o izq si está en la primera o última tarjeta, usando la propiedad none o las muestra con block.
     leftArrow.style.display = currentIndex === 0 ? "none" : "block";
     rightArrow.style.display = currentIndex === cards.length - 1 ? "none" : "block";
   }
-
+  //Al hacer click en la flecha izq, se decrementa el índice si no está en la primera tarjeta.
   leftArrow.addEventListener("click", () => {
     if (currentIndex > 0) {
       currentIndex--;
       updateCards();
     }
   });
-
+  //Y aquí se incrementa al hacer click en la flecha derecha.
   rightArrow.addEventListener("click", () => {
     if (currentIndex < cards.length - 1) {
       currentIndex++;
       updateCards();
     }
   });
-
-  updateCards(); // Inicial
+  //Se llama a la función.
+  updateCards();
 });
 
-//Activar el swap de tarjetas de instrucciones en versión responsive==============================
+//Activar el swap de tarjetas en bienvenido_suscriptor==============================
+//Esta función amplia el carrusel anterior añadiendo la librería Hammer.js para hacer swap en pantallas táctiles.
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
     const container = document.querySelector(".card-container");
@@ -169,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Flechas
+    //Flechas
     leftArrow.addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + cards.length) % cards.length;
         showCard(currentIndex);
@@ -180,7 +196,8 @@ document.addEventListener("DOMContentLoaded", () => {
         showCard(currentIndex);
     });
 
-    // Swipe con Hammer.js
+    //Swipe con Hammer.js
+    //Aquí crea la instancia de Hammer y "escucha" los movimientos del dedo en la pantalla.
     const hammer = new Hammer(container);
     hammer.on("swipeleft", () => {
         currentIndex = (currentIndex + 1) % cards.length;
@@ -192,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showCard(currentIndex);
     });
 
-    // Mostrar la primera tarjeta
+    //Mostrar la primera tarjeta
     showCard(currentIndex);
 });
 
@@ -202,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const temasFieldset = document.getElementById("temas_personalizados_fieldset");
   const checkboxContainer = document.getElementById("checkboxContainer");
 
-  // Crear los 34 checkboxes al cargar
+  //Crear los 34 checkboxes al cargar
   for (let i = 1; i <= 31; i++) {
   const label = document.createElement("label");
   const checkbox = document.createElement("input");
@@ -210,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
   checkbox.name = "temasSeleccionados[]";
   checkbox.value = i;
   
-  // Si el número es de una cifra, añade un 0 delante
+  //Si el número es de una cifra, añade un 0 delante, para que las columnas queden bien alineadas.
   const numeroFormateado = i < 10 ? `0${i}` : `${i}`;
   
   label.appendChild(checkbox);
@@ -219,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 
-  // Mostrar/ocultar los checkboxes según selección
+  //Mostrar/ocultar los checkboxes según selección
   temasSelect.addEventListener("change", function () {
     if (this.value === "personalizados") {
       temasFieldset.style.display = "flex";
@@ -231,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//Activar swap en tarjeta-test=================================================================
+//Activar swap en tarjeta-test (de nuevo la librería Hammer)=================================================================
 document.addEventListener("DOMContentLoaded", () => {
     const cardWrapper = document.querySelector(".tarjeta_test");
     const leftArrow = cardWrapper.querySelector(".left-arrow");
@@ -247,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Swipe con Hammer.js
+    //Swipe con Hammer.js
     const hammer = new Hammer(cardWrapper);
     hammer.on("swipeleft", () => {
         currentIndex = (currentIndex + 1) % tarjetas.length;
@@ -263,57 +280,46 @@ document.addEventListener("DOMContentLoaded", () => {
     showCard(currentIndex);
 });
 
-//Aparición de los guardias del login
+//Función que hace aparecer y desaparecer las imágenes en el login y el registro.
 document.addEventListener("DOMContentLoaded", () => {
-  const campos = [document.getElementById("email"), document.getElementById("password")];
-  const soldados = document.querySelectorAll(".soldado");
+  function configurarAparicion(inputs, personajes, contenedor) {
+    const elementos = document.querySelectorAll(inputs);
+    const figuras = document.querySelectorAll(personajes);
 
-  function mostrarSoldados() {
-    soldados.forEach(s => s.classList.add("visible"));
-  }
-
-  function ocultarSoldados() {
-    soldados.forEach(s => s.classList.remove("visible"));
-  }
-
-  // Mostrar al hacer foco en cualquier campo
-  campos.forEach(campo => {
-    campo.addEventListener("focus", mostrarSoldados);
-  });
-
-  // Ocultar al hacer clic fuera del formulario
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".logueate")) {
-      ocultarSoldados();
+    function mostrar() {
+      figuras.forEach(f => f.classList.add("visible"));
     }
-  });
+
+    function ocultar() {
+      figuras.forEach(f => f.classList.remove("visible"));
+    }
+
+    elementos.forEach(el => {
+      el.addEventListener("focus", mostrar);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(contenedor)) {
+        ocultar();
+      }
+    });
+  }
+
+  // Login: soldados
+  configurarAparicion(
+    "#email, #password",
+    ".soldado",
+    ".logueate"
+  );
+
+  // Registro: amores
+  configurarAparicion(
+    ".registrate input",
+    ".amor_izq, .amor_dcha",
+    ".registrate"
+  );
 });
 
-//Aparición de opositos en el registro
-document.addEventListener("DOMContentLoaded", () => {
-  const camposRegistro = document.querySelectorAll(".registrate input");
-  const amores = document.querySelectorAll(".amor_izq, .amor_dcha");
-
-  function mostrarAmores() {
-    amores.forEach(a => a.classList.add("visible"));
-  }
-
-  function ocultarAmores() {
-    amores.forEach(a => a.classList.remove("visible"));
-  }
-
-  // Mostrar al hacer foco en cualquier input del formulario de registro
-  camposRegistro.forEach(input => {
-    input.addEventListener("focus", mostrarAmores);
-  });
-
-  // Ocultar al hacer clic fuera del formulario
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".registrate")) {
-      ocultarAmores();
-    }
-  });
-});
 
 
 
