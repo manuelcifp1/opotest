@@ -86,12 +86,12 @@
     text-decoration: none;
     transition: color 0.3s ease;   
     font-weight:500;
-    margin-top: 17%;
+    margin-top: 17%;    
+    border: transparent 2px solid;
 }
 
 .ceuta_melilla:hover {
-    border: var(--naranja_principal) 2px solid;
-    padding: 3px 7px;
+    border: var(--naranja_principal) 2px solid;    
     background-color: var(--naranja_filo_brillo_logo);
     border-radius: 5px;
 }
@@ -109,6 +109,10 @@
     font-family: "Lexend", sans-serif;        
 }
 
+#contenedor_menu ul{
+    margin:3px;
+}
+
 #contenedor_menu ul li a {
     text-decoration: none;    
     transition: color 0.3s ease;
@@ -120,9 +124,13 @@
     -1px 1px 2px black,
     1px -1px 2px black,
     -1px -1px 2px black;
+    border: transparent 2px solid;    
     z-index: 100;
 }
 
+.uno{
+    padding:5px;
+}
 #contenedor_menu ul li a:hover {
     border: var(--naranja_principal) 2px solid;
     padding: 3px 3px;
