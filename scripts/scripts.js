@@ -280,12 +280,13 @@ document.addEventListener("DOMContentLoaded", () => {
     showCard(currentIndex);
 });
 
-//Función que hace aparecer y desaparecer las imágenes en el login y el registro.
+//Función que hace aparecer y desaparecer las imágenes en el login y el registro al hacer focus en los campos.
 document.addEventListener("DOMContentLoaded", () => {
   function configurarAparicion(inputs, personajes, contenedor) {
+    //Seleccionamos todos los inputs y todas las imágenes.
     const elementos = document.querySelectorAll(inputs);
     const figuras = document.querySelectorAll(personajes);
-
+    //Funciones que muestra u ocultan las imágenes, les añade visibilidad o invisibilidad.
     function mostrar() {
       figuras.forEach(f => f.classList.add("visible"));
     }
@@ -293,26 +294,27 @@ document.addEventListener("DOMContentLoaded", () => {
     function ocultar() {
       figuras.forEach(f => f.classList.remove("visible"));
     }
-
+    //Y aquí se le asigna el focus los inputs.
     elementos.forEach(el => {
       el.addEventListener("focus", mostrar);
     });
-
+    //Se comprueba si los clicks se hacen dentro del formulario o fuera. Si es fuera, oculta las imágenes.
     document.addEventListener("click", (e) => {
+      //Con closest, devuelve el primer ancestro del elemento que coincida con el selector. En caso contrario, devuelve null.
       if (!e.target.closest(contenedor)) {
         ocultar();
       }
     });
   }
 
-  // Login: soldados
+  //Login: soldados
   configurarAparicion(
     "#email, #password",
     ".soldado",
     ".logueate"
   );
 
-  // Registro: amores
+  //Registro: oposito in love
   configurarAparicion(
     ".registrate input",
     ".amor_izq, .amor_dcha",
