@@ -1,12 +1,4 @@
 /*PÁGINA PERFIL=====================================================================*/
-.perfil_main {      
-    background-image: url('img/fondo_mosaico_blanco.png');
-    background-repeat: repeat;
-    background-size: 100px;
-    display: flex;
-    flex-direction: column;        
-}
-
 .persona {
     height: 95vh;
     width: 100%;
@@ -16,34 +8,25 @@
     color: var(--naranja_principal);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     scroll-snap-align: end;
-    scroll-snap-stop: always;  
+    scroll-snap-stop: always;
+    gap: 10%;  
 }
 
-.medallero {
-    min-height: 95vh;        
+.h1Perfil {
+    color: var(--naranja_principal);
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.4);    
 }
 
 .cuadro {  
     box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);
     border-radius: 1em;
-}
-
-.cuadro h3 {
-    padding: 1em;
-    text-align: center;  
-}
-
-.cuadro p {
-    padding: 1em;
-}
-
-.palabras {
     width: 28vw;
-    height: 42vh;  
-    
+    height: 42vh;    
     padding-right: 1.5em;
     border: 4px solid var(--naranja_principal);
     background: 
@@ -54,6 +37,19 @@
     text-shadow:
     2px 2px 4px rgba(0, 0, 0, 0.8),
     -1px -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cuadro h3 {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0.5em;    
+    text-align: center;
+    padding: 0 auto;
+    width: 50%;      
+}
+
+.cuadro p {
+    padding: 1em;
 }
 
 .identificacion {
@@ -94,12 +90,18 @@
     justify-content: space-around;
     align-items: center;
     width: 75vw;
+    height: 100%;
 }
 
 .consulta_estadisticas {
     height: 46.5vh;
     border-radius: 100%;
     animation: pantallaGlow 2s ease-in-out infinite;
+}
+
+.medallero {
+    min-height: 95vh;
+    gap: 1%;        
 }
 
 .cuadro_medallas {
@@ -113,14 +115,14 @@
     box-shadow: 0 4px 10px rgba(61, 54, 202, 0.3), 0 0 0 4px var(--azul_principal);
     border-radius: 1em;
     border: 4px solid var(--naranja_principal);
-    display: grid;
-    gap: 6px;
-    grid-template-columns: repeat(4, 1fr); /* EXACTAMENTE 4 columnas */
+    display: grid;    
+    grid-template-columns: repeat(6, 1fr); /* EXACTAMENTE 4 columnas */
     grid-auto-rows: 1fr; /* Las filas crecen igual que las columnas */
     aspect-ratio: auto;
     margin: 0 auto;
     margin-bottom: 14%;
-    padding: 15px;     
+    padding: 15px;
+    gap: 1%;     
 }
 
 .una_medalla {
@@ -131,47 +133,8 @@
   width: 100%;  
 }
 
-.perfil_main h1 {
-    color: var(--naranja_principal);
-    text-shadow:
-    2px 2px 4px rgba(0, 0, 0, 0.8),
-    -1px -1px 2px rgba(0, 0, 0, 0.4);
-    margin-top: 7.4%;
-}
-
-.iconsPerfil {
-    font-size: 0.6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3em;
-    text-decoration: none;    
-}
-
-.iconsPerfil {
-    margin-left: -1.8em;    
-}
-
-.noLine {
-    text-decoration: none;
-}
-
-.autorPerfil {    
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.fa-copyright {
-    font-size: 0.5em;
-}
-
-.footPerfil {
-    scroll-snap-align: start;   /* Lo alinea como destino de scroll */
-    scroll-snap-stop: always;    
-}
 /*Evita el desbordamiento de los párrafos*/
-.cuadro.palabras {
+.cuadro {
     max-height: 40vh;
     overflow-y: auto;
     overflow-x: hidden;

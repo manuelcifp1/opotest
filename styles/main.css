@@ -23,10 +23,13 @@
 }
 
 html, body {
-    height: 100%;        
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;    
+    height: 100%;       
     overflow-x: hidden;
+}
+
+.bodySnapping {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -68,8 +71,8 @@ header::after {
 }
 
 .logo {
-    height: 80%;        
-    margin-left: 1%;       
+    width: 6%;        
+    margin-left: 0.5%;       
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));   
 }
 
@@ -105,7 +108,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;        
+    gap: 10%;            
 }
 
 .snapping {
@@ -138,7 +141,7 @@ i {
 
 .abajo {    
     height: 48%;       
-    margin-top: 26%;
+    margin-top: 23%;
     margin-right: 5%;    
     opacity: 0;
     transform: translateY(100vh);
@@ -147,12 +150,12 @@ i {
 
 /*INDEX - SEGUNDA SECCIÓN===========================================================================*/
 .saludo {
-    width: 35%;       
+    width: 30%;       
 }
 
 /*logos de organismos*/
 .logos {
-    height: 60%;    
+    height: 55%;    
     aspect-ratio: 1/1;
     border: 10px var(--azul_principal) ridge;    
     border-radius: 200%;
@@ -175,25 +178,26 @@ i {
 
 /*INDEX - TERCERA SECCIÓN====================================================================*/
 .banderita {
-    height: 65%;    
+    width: 27%;;    
+}
+
+.videoshow {
+    width: 40%;
 }
 
 .menuvideo {
-    width: 80%;    
+    width: 90%;    
     filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
 }
 
 /*INDEX - CUARTA SECCIÓN==========================================================================*/
 .podium {
-    height: 72%;
-    margin-top: 3em;
-    margin-left: 15%;   
+    width: 30%;       
 }
 
-.medallas {
-    height: 73%;
-    width: 73%;
-    margin-top: 10em;
+.medallas {    
+    height: 65%;
+    aspect-ratio: 1/1;    
     position: relative;
     overflow: hidden;
 }
@@ -212,15 +216,13 @@ i {
 
 /*INDEX - QUINTA SECCIÓN=================================================================================*/
 .videoai {
-    width: 30%;    
-    margin-left: 7%;  
+    width: 20%;      
     filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));
+    margin-left: 12%;
 }
 
 .informatico {
-    height: 72%;
-    margin-top: 3%;
-       
+    width: 58%;       
 }
 
 /*INDEX - SEXTA SECCIÓN==============================================================================*/
@@ -244,8 +246,7 @@ i {
 }
 
 .adios {
-    height: 75%;
-    margin-top: 5em;      
+    width: 34%;          
 }
 
 .star_register {
@@ -257,7 +258,7 @@ i {
     border-radius: 100%;
     position: relative;
     overflow: visible;
-    width: 19%;
+    width: 12%;
     aspect-ratio: 1/1;    
     background-color: var(--azul_principal);
     animation: zoomLoop 4s ease-in-out infinite;    
@@ -290,7 +291,7 @@ i {
 
 .reg {
     color: var(--naranja_principal);  
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Luckiest Guy";
     font-weight: 400;
     font-style: normal;
     font-size: 2.5em;
@@ -573,9 +574,8 @@ footer.footPerfil {
 }
 
 /* Reservar hueco para que el contenido no quede tapado */
-main,
-main.perfil_main {
-  padding-bottom: 6vh;  /* algo más que 5vh de altura de footer */
+main {
+  padding-bottom: 20vh;  /* algo más que 5vh de altura de footer */
   box-sizing: border-box;
 }
 

@@ -17,7 +17,7 @@
     <title>Opotest perfil</title>
 </head>
 
-<body class="snap-end-fix">
+<body class="bodySnapping">
 
     <header>
 
@@ -37,15 +37,15 @@
 
     </header>
 
-    <main class="perfil_main">        
+    <main>        
 
         <section class="datos persona">
 
-            <h1>Tu perfil</h1>
+            <h1 class="h1Perfil">Tu perfil</h1>
 
             <div class="identificacion">
 
-                <div class="cuadro palabras">                
+                <div class="cuadro">                
                     <h3>Datos personales</h3>
                     <p>Nombre: <span class="nombre_perfil"></span></p>
                     <p>Apellidos: <span class="apellidos_perfil"></span></p>
@@ -65,7 +65,7 @@
 
                 <img class="oposito consulta_estadisticas" src="styles/img/oposito_web/oposito_estadisticas.png" alt="oposito consultando las estadísticas de Opotest">
 
-                <div class="cuadro palabras dos">                
+                <div class="cuadro cuadroDos">                
                     <h3>Estadísticas</h3>                
                     <p>Tema con mejores resultados: <span class="tema_mejores_resultados"></span></p>
                     <p>Tema con peores resultados: <span class="tema_peores_resultados"></span></p>
@@ -79,9 +79,18 @@
 
         <section class="medallero persona">
 
-            <h1>Medallero</h1>
+            <h1 class="h1Perfil">Medallero</h1>
             <!--Aquí se irán añadiendo las medallas, tendrá una estructura grid. Estas medallas están situadas ahora como muestra.-->
             <div class="cuadro_medallas">                
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_50.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_150.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_300.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_50.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_150.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_50.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_150.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_300.png');"></div>
+                <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_mes.png');"></div>
                 <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_50.png');"></div>
                 <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_150.png');"></div>
                 <div class="una_medalla" style="background-image: url('styles/img/medallas/medalla_300.png');"></div>
@@ -98,17 +107,17 @@
         <section class="snap-filler"></section>
 
         
-        <footer class="foot footPerfil snapping">
+        <footer class="foot">
 
-            <div class="brands iconsPerfiltodos">
-                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-facebook iconsPerfil"></i></a>
-                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-instagram iconsPerfil"></i></a>
-                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-twitter iconsPerfil"></i></a>
-                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-youtube iconsPerfil"></i></a>
+            <div class="brands">
+                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="javascript:void(0)" target="_blank" class="noLine"><i class="fa-brands fa-youtube"></i></a>
             </div>            
 
-            <div class="autor autorPerfil">
-                    <i class="fa-regular fa-copyright"></i><span class="nombre nombrePerfil">Manuel Alba</span>
+            <div class="autor">
+                    <i class="fa-regular fa-copyright"></i><span class="nombre">Manuel Alba</span>
             </div>
 
         </footer>
