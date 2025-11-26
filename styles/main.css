@@ -308,7 +308,12 @@ footer {
     display: flex;
     justify-content: space-between;    
     box-shadow: 0 -4px 6px rgba(2, 2, 2, 0.5);
-    padding: 0.5%;        
+    padding: 0.5%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 900;        
 }
 
 .brands {
@@ -546,34 +551,11 @@ footer {
     padding: 0.2em;
 }
 
-/* Oculta la barra de scroll vertical en navegadores basados en WebKit (Chrome, Edge, Safari) */
-body.simple-layout::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-/* Para Firefox */
-body.simple-layout {
-  scrollbar-width: none;
-}
-
-/* === FOOTER FIJO PARA TODAS LAS PÁGINAS ======================== */
-
-/* El footer siempre pegado abajo de la ventana */
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 900;   /* por encima del contenido */
-}
-
 /* Reservar hueco para que el contenido no quede tapado */
 main {
   padding-bottom: 20vh;  /* algo más que 5vh de altura de footer */
   box-sizing: border-box;
 }
-
 
 
 /*MEDIA QUERY====================================================================================================================*/
@@ -883,10 +865,6 @@ main {
         margin-top: 6.5em;    
     }
 
-    video {
-        width: 30em;
-    }
-
     .informatico {
         height: 50vh;
         margin-left: 6em;    
@@ -1004,33 +982,7 @@ main {
 
     .adminBlue {
         font-size: 1.1em;
-    }       
-
-    body.simple-layout,
-    body.snap-end-fix {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    main,
-    main.perfil_main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer.foot {
-        margin-top: auto;
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-    }
-
-    body.snap-end-fix .snap-filler {
-        height: 1px;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
+    }     
 
 }
 
@@ -1115,11 +1067,6 @@ main {
         justify-content: center;
         align-items: center;       
         margin-top: 4em;           
-    }
-
-    video {
-        width: 28em;        
-        margin-right: -30%;
     }
 
     .informatico {
@@ -1208,78 +1155,17 @@ main {
     #sectionBlue {               
         height: 95vh;  
     }
-
-    footer.foot {
-        height: 5vh;
-    }
-
-    body.simple-layout,
-    body.snap-end-fix {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    main,
-    main.perfil_main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer.foot,
-    footer.footPerfil {
-        margin-top: auto;
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-    }
-
-    body.snap-end-fix .snap-filler {
-        height: 1px;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
+    
 }
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
-    /* Ajustes específicos para portátiles modernos (el mío) */
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        overflow-y: auto;
-    }
-    
-    main {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
-
-    body.simple-layout main {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    body.simple-layout section {
-        flex: 1 0 auto;
-        height: auto;
-    }
-
-    body.simple-layout footer.foot {
-        flex-shrink: 0;
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-    }    
+    /* Ajustes específicos para portátiles modernos (el mío) */   
 
     /*HEADER==================================*/
     .logo {
         height: 7vh;
-        margin-left: 0.6em;
-        
+        margin-left: 0.6em;        
     }
     
     /*INDEX - PRIMERA SECCIÓN========================================*/    
@@ -1325,11 +1211,6 @@ main {
         margin-top: 0.3%;
     }
 
-    section.ultima {
-    flex: 1;
-    height: auto;
-    }
-
     /*FOOTER======================================================*/
     .brands {
         gap: 0.1em;
@@ -1338,12 +1219,6 @@ main {
 
     .fa-copyright {
         font-size: 1em;
-    }
-
-    footer .foot {
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-        flex-shrink: 0;
     }
 
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
@@ -1403,12 +1278,6 @@ main {
         width: 10%;
         font-size: 1.3em;
     }
-
-    body.snap-end-fix .snap-filler {
-    height: 1px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
 
   .adminBlue {
     font-size: 1em;
