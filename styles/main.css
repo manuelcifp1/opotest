@@ -560,6 +560,26 @@ body.simple-layout {
   scrollbar-width: none;
 }
 
+/* === FOOTER FIJO PARA TODAS LAS PÁGINAS ======================== */
+
+/* El footer siempre pegado abajo de la ventana */
+footer.foot,
+footer.footPerfil {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 900;   /* por encima del contenido */
+}
+
+/* Reservar hueco para que el contenido no quede tapado */
+main,
+main.perfil_main {
+  padding-bottom: 6vh;  /* algo más que 5vh de altura de footer */
+  box-sizing: border-box;
+}
+
+
 
 /*MEDIA QUERY====================================================================================================================*/
 
