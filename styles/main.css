@@ -332,10 +332,6 @@ i {
     margin-right: 1.5em;      
 }
 
-.enlaces_prueba {
-    margin: 0 auto;
-}
-
 .fa-copyright {
     font-size: 1em;
 }
@@ -688,15 +684,7 @@ body.simple-layout {
   .brands a {
     font-size: 20px;
     padding: 4px;
-  }
-
-  .enlaces_prueba {    
-    display: none;
-  }
-
-  .enlaces_prueba a {
-    font-size: 12px;
-  }
+  }  
 
   .fa-copyright {
     font-size: 13px;
@@ -909,10 +897,6 @@ body.simple-layout {
         padding: 0.5em;
     }
 
-    .enlaces_prueba {    
-        display: none;
-    }
-
     /*PÁGINA FIN_TEST_INVITADO=============================================*/
     .invitadoReg {
         height: 48vh;        
@@ -997,10 +981,6 @@ body.simple-layout {
     .enlaces_prueba a {
         font-size: 0.9em;
         display: none;
-    }
-
-    .enlaces_prueba {
-        margin-left: 5em;
     }
 
     .aBlue {
@@ -1264,21 +1244,21 @@ body.simple-layout {
     }
 
     body.simple-layout main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-  body.simple-layout section {
-    flex: 1 0 auto;
-    height: auto;
-  }
+    body.simple-layout section {
+        flex: 1 0 auto;
+        height: auto;
+    }
 
-  body.simple-layout footer.foot {
-    flex-shrink: 0;
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-  }    
+    body.simple-layout footer.foot {
+        flex-shrink: 0;
+        scroll-snap-align: end;
+        scroll-snap-stop: always;
+    }    
 
     /*HEADER==================================*/
     .logo {
