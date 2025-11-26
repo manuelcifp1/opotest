@@ -147,7 +147,7 @@
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
     /*Primera sección*/
-    h1 {
+    .h1Perfil {
     font-size: 1.3em;
     margin-bottom: 40px;
     margin-top: 10%;
@@ -164,14 +164,6 @@
 
   .identificacion {
     gap: 0.5em;
-  }
-
-  .palabras {
-    width: 90vw;
-    font-size: 0.7em;
-    height: 33vh;
-    margin-bottom: 60px;
-    padding-left: 0.1em;
   }
 
   .cuadro h3 {
@@ -194,7 +186,7 @@
     margin-top: 30px;
   } 
   
-  .dos {
+  .cuadroDos {
     height: 44vh;
   }
 
@@ -214,35 +206,20 @@
     width: 90vw;    
   }
 
-  .footPerfil {
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-  }
-
   .cuadro p {
     padding: 0.7em;
-  }
-
-  .iconsPerfiltodos {
-    padding: 0.8em;
-    margin-left: 10px;
-  }
-
-  .iconsPerfil {
-    font-size: 1em;
-    padding: 1em;
   }
 
 }
 
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
-    .persona h1 {
+    .h1Perfil {
         font-size: 1.3em;
         margin-bottom: 0.5em;
         margin-top: 3em;
     }
-  
+
     .datos {
         justify-content: center;
         align-items: center;                
@@ -254,16 +231,7 @@
     
     .identificacion, .cifras {
         flex-direction: column;
-    }
-
-    .palabras {
-        width: 80vw;
-        font-size: 0.6em;
-        height: 28vh;        
-        padding-left: 0.1em;
-        padding: -1em;
-        margin-bottom: -15vh;
-    }    
+    }  
 
     .carnets_oposito {
         height: 33vh;
@@ -281,7 +249,7 @@
         margin-bottom: 8vh;        
     } 
     
-    .dos {
+    .cuadroDos {
         font-size: 0.6em;
         height: 30vh;
         width: 50vw;
@@ -297,43 +265,13 @@
 
     .cuadro_medallas {
         width: 90vw;        
-    }
-
-    .noLine {
-        font-size: 1.8em;
-    } 
-    
-    body.simple-layout,
-    body.snap-end-fix {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    }
-
-    main,
-    main.perfil_main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    }
-
-    footer.foot,
-    footer.footPerfil {
-    margin-top: auto;
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-    }
-
-    .iconsPerfiltodos {
-        padding-left: 0.3em;
-        width: 10vw;
-    }
+    }    
 
 }
 
 /*Tablets grandes y laptops (768px a 1199px)*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .datos h1 {
+    .h1Perfil {
         font-size: 1.4em;
         margin-top: 10%; /* ajusta según el alto real del header */
         height: 3vh;   
@@ -363,14 +301,7 @@
         width: 100%;
         height: 90vh;
         gap: 5%;        
-    }
-
-    .palabras {
-        width: 50vw;
-        font-size: 0.6em;
-        height: 32vh;                        
-    }
-    
+    }    
 
     .cuadro p {
         padding: 0.4em;
@@ -421,53 +352,13 @@
         width: 75%;
     }
 
-    .iconsPerfiltodos {
-        padding-left: 0.3em;
-        width: 10vw;
-        
-    }
-
-    .iconsPerfil {
-        font-size: 1em;
-    }
-
-    body.simple-layout,
-    body.snap-end-fix {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    main,
-    main.perfil_main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer.foot,
-    footer.footPerfil {
-        margin-top: auto;
-        scroll-snap-align: end;
-        scroll-snap-stop: always;
-    }
-
-    body.snap-end-fix .snap-filler {
-        height: 1px;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
-
-
-
 }
-
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)=====================================*/
 /* Ajustes específicos para portátiles modernos (el mío) */
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     
-    .datos h1 {
+    .h1Perfil {
         margin-top: 2em;
         font-size: 1.5em;
     }
@@ -475,13 +366,7 @@
     .carnets_oposito {
         height: 34.8vh;
         width: 64vw;
-    }
-    
-    .palabras {
-        width: 60vw;
-        height: 33vh;
-        font-size: 0.6em;              
-    }
+    }    
 
     .dos {
         width: 28vw;
@@ -523,58 +408,28 @@
         overflow-y: visible;
     }
 
-  .medallero h1 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 1.8em;
-  }
+    .cuadro_medallas {
+        margin-top: 0;
+        margin-bottom: 13.6%;
+    }
 
-  .cuadro_medallas {
-    margin-top: 0;
-    margin-bottom: 13.6%;
-  }
+    .identificacion {
+        height: 95vh;
+    }
 
-  .identificacion {
-    height: 95vh;
-  }
+    .estadisticas {
+        height: 95vh;
+    }    
 
-  .estadisticas {
-    height: 95vh;
-  }
+    .medallero {
+        flex: 1 0 auto;
+        padding-bottom: 2vh; /* da un pequeño respiro visual si lo deseas */
+        margin-bottom: 0;
+    }
 
-  .iconsPerfil {
-    font-size: 1em;
-  }
-
-  .iconsPerfiltodos {    
-    padding: 0.1em;    
-  }
-
-  .medallero h1 {
-    font-size: 1.3em;
-  }
-
-  .perfil_main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  .medallero {
-    flex: 1 0 auto;
-    padding-bottom: 2vh; /* da un pequeño respiro visual si lo deseas */
-    margin-bottom: 0;
-  }
-
-  .cuadro_medallas {
-    margin-bottom: 0; /* elimina el margen fijo previo */
-    padding-bottom: 1vh; /* opcional para separación visual suave */
-  }
-
-  footer.footPerfil {
-    margin-top: auto;
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-  }
+    .cuadro_medallas {
+        margin-bottom: 0; /* elimina el margen fijo previo */
+        padding-bottom: 1vh; /* opcional para separación visual suave */
+    }
 
 }

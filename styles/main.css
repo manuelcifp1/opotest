@@ -141,8 +141,8 @@ i {
 }
 
 .abajo {    
-    height: 48%;       
-    margin-top: 23%;
+    height: 40%;       
+    margin-top: 27%;
     margin-right: 5%;    
     opacity: 0;
     transform: translateY(100vh);
@@ -300,7 +300,7 @@ i {
 }
 
 /*FOOTER=================================================================================*/
-.foot {
+footer {
     height: 5vh;
     width: 100%;
     background: linear-gradient(90deg, #3d36ca, #524bcc, #635ecc, #524bcc, #3d36ca);
@@ -546,11 +546,6 @@ i {
     padding: 0.2em;
 }
 
-/*ajustes finales==================================*/
-body.simple-layout {
-  overflow-y: auto;
-}
-
 /* Oculta la barra de scroll vertical en navegadores basados en WebKit (Chrome, Edge, Safari) */
 body.simple-layout::-webkit-scrollbar {
   width: 0px;
@@ -565,8 +560,7 @@ body.simple-layout {
 /* === FOOTER FIJO PARA TODAS LAS PÁGINAS ======================== */
 
 /* El footer siempre pegado abajo de la ventana */
-footer.foot,
-footer.footPerfil {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;

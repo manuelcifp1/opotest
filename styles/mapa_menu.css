@@ -78,7 +78,8 @@
 
 #contenedor_menu ul li {
     margin: 20px 0;
-    font-family: "Lexend", sans-serif;        
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 2em;        
 }
 
 #contenedor_menu ul{
@@ -86,7 +87,7 @@
 }
 
 #contenedor_menu ul li a {
-    text-decoration: none;    
+    text-decoration: none;        
     transition: color 0.3s ease;
     color: var(--naranja_principal);
     font-size: 2em;
@@ -97,7 +98,7 @@
     1px -1px 2px black,
     -1px -1px 2px black;
     border: transparent 2px solid;    
-    z-index: 100;
+    z-index: 100;    
 }
 
 
