@@ -104,14 +104,6 @@ input[type="radio"], input[type="checkbox"] {
     color: var(--naranja_sombra_logo)
 }
 
-.diferente {
-    scroll-snap-align: none;
-    scroll-snap-stop: none;
-}
-
-body.diferente {
-    scroll-snap-type: none !important;
-}
 
 /*MEDIA QUERY=========================================================================*/
 
