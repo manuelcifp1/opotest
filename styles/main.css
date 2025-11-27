@@ -88,17 +88,17 @@ i {
 }
 
 .fa-right-to-bracket {            
-    position:absolute;
-    top: 30%;
-    right: 2.8em ;
-    font-size: 1.4em;        
+    position: absolute;
+    top: 38%;
+    right: 5.7em ;
+    font-size: 1.8em;        
 }
 
 .fa-user {
     position: absolute;
-    top: 30%;
-    right: 1.8em ;
-    font-size: 1.4em;
+    top: 38%;
+    right: 3.7em ;
+    font-size: 1.8em;
 }
 
 /*INDEX - COMÚN A TODAS LAS SECCIONES==========================================================================*/
@@ -486,31 +486,6 @@ footer::after {
 }
 
 /*PÁGINA ADMIN=============================================*/
-#logoBlue {
-    width: 18%;
-    margin-left: 0.7em;
-}
-
-.adminOrange {
-    background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
-}
-
-.adminBlue {
-    color: var(--azul_principal);
-    font-size: 1.2em;
-}
-
-.adminOrange::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--azul_principal);
-    pointer-events: none;
-}
-
 .bodyAdmin {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -519,54 +494,53 @@ footer::after {
     background-size: 110px;
 }
 
+.backgroundOrange {
+    background-color: var(--naranja_principal);
+}
+
+.headerFooterOrange {
+    background: linear-gradient(90deg, #fe8525, #f89544, #f6ae73, #f89544, #fe8525);
+}
+
+/*Header*/
+#logoBlue {
+    width: 18%;
+    margin-left: 0.7em;
+}
+
+.backgroundBlue {
+    background-color: var(--azul_principal);
+
+}
+
+.lineBlueHeader::after {
+    background-color: var(--azul_principal);
+}
+
+.lineBlueFooter::after {
+    background-color: var(--azul_principal);
+}
+
+/*Main*/
 #sectionBlue {
     width: 100%;
     height: 95vh;    
     display: flex;              
 }
 
-.loginOrange {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
-
-.perfilOrange {
-    margin-right: 1em;
-}
-
-.accesoOrange {
-    margin-right: 1em;
-}
-
-.burgerOrange {
-    top: 2.5em;
-}
-
-.aBlue {
+/*Footer*/
+.brandsBlue {
     color: var(--azul_principal);
     width: 8%;
     font-size: 1.5em;
-}
-
-#orangeFooter {
-    background: linear-gradient(90deg, #fe8525, #fd9f51, #fe8525 );
-    
 }
 
 .backgroundBlue {
     background: var(--azul_principal);
 }
 
-.blueTest {
-    background-color: var(--azul_principal);
-    padding: 0.2em;
-}
-
-/* Reservar hueco para que el contenido no quede tapado */
-main {
-  padding-bottom: 20vh;  /* algo más que 5vh de altura de footer */
-  box-sizing: border-box;
+.colorBlue {
+    color: var(--azul_principal);
 }
 
 
