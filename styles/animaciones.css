@@ -196,6 +196,24 @@
   }
 }
 
+/*Animación flecha de bajada*/
+@keyframes baja {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+
+}
 
 

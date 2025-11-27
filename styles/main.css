@@ -127,7 +127,8 @@ i {
     background-repeat: repeat;
     background-size: 110px;    
     scroll-snap-align: end; /* o end, como prefieras */
-    scroll-snap-stop: always;       
+    scroll-snap-stop: always;
+    position: relative;       
 }
 
 .superlogo {
@@ -149,7 +150,20 @@ i {
     animation: subir_abajo 1s ease-out 2.5s forwards;    
 }
 
+.arrow_down {
+    width: 3%;
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    opacity: 0;
+    animation: aparecer 0s 2.5s forwards, baja 1s ease-in-out 2.5s infinite;
+}
+
 /*INDEX - SEGUNDA SECCIÓN===========================================================================*/
+.segunda_seccion {
+    position: relative;
+}
+
 .saludo {
     width: 30%;       
 }
@@ -178,6 +192,10 @@ i {
 }
 
 /*INDEX - TERCERA SECCIÓN====================================================================*/
+.tercera_seccion {
+    position: relative;
+}
+
 .banderita {
     width: 27%;;    
 }
@@ -192,6 +210,10 @@ i {
 }
 
 /*INDEX - CUARTA SECCIÓN==========================================================================*/
+.cuarta_seccion {
+    position: relative;
+}
+
 .podium {
     width: 30%;       
 }
@@ -216,6 +238,10 @@ i {
 }
 
 /*INDEX - QUINTA SECCIÓN=================================================================================*/
+.quinta_seccion {
+    position: relative;
+}
+
 .videoai {
     width: 20%;      
     filter: drop-shadow(0 0 12px var(--naranja_filo_brillo_logo));

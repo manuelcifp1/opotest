@@ -15,6 +15,10 @@
     gap: 10%;  
 }
 
+.datos, .estadisticas {
+    position: relative;
+}
+
 .h1Perfil {
     color: var(--naranja_principal);
     text-shadow:
@@ -57,7 +61,8 @@
     justify-content: center;
     align-items: center;
     gap: 7em;
-    width: 75vw;  
+    width: 70vw;
+    height: 60%;  
 }
 
 .carnets_oposito {   
@@ -65,7 +70,7 @@
     width: 24.9vw;    
     border: 10px var(--naranja_principal) ridge;
     background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('img/fondo_mosaico_azul.png');
     background-repeat: repeat;
     background-size: 110px;
@@ -89,8 +94,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 75vw;
-    height: 100%;
+    width: 70vw;
+    height: 60%;
+}
+
+.identificacion,
+.cifras {     
+    background: linear-gradient(
+    rgba(254, 133, 37, 1),
+    rgba(254, 133, 37, 0.6)
+    );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+              0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;          
 }
 
 .consulta_estadisticas {
