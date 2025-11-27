@@ -247,7 +247,7 @@ i {
 }
 
 .adios {
-    width: 34%;          
+    width: 32%;          
 }
 
 .star_register {
@@ -375,6 +375,10 @@ footer::after {
 
 .invitadoReg {
     height: 70vh;
+}
+
+.star_register_invitado {
+    width: 14%;
 }
 
 /*PÁGINA MEDALLA====================================================================================*/
