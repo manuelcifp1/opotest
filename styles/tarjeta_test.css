@@ -68,10 +68,6 @@
   transition: transform 0.3s ease;
 }
 
-.nuevaFlecha:hover {
-  transform: scale(1.5);
-}
-
 .contenido_tarjeta input {
     font-size: 0.3em;
     margin-right: -8em;
