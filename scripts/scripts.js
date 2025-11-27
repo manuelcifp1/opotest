@@ -211,6 +211,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Mostrar la primera tarjeta
     showCard(currentIndex);
+
+    // Clic en la tarjeta para pasar a la siguiente
+    cards.forEach((card, index) => {
+      card.addEventListener("click", () => {
+        if (currentIndex < cards.length - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; // vuelve al inicio si es la última
+        }
+        showCard(currentIndex);
+      });
+    });
+
 });
 
 //Aparición checkboxes en página seleccion_test=========================================================
