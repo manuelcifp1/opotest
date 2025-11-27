@@ -285,7 +285,7 @@ i {
     border-radius: 100%;
     position: relative;
     overflow: visible;
-    width: 12%;
+    width: 15%;
     aspect-ratio: 1/1;    
     background-color: var(--azul_principal);
     animation: zoomLoop 4s ease-in-out infinite;    
@@ -404,7 +404,7 @@ footer::after {
 }
 
 .star_register_invitado {
-    width: 14%;
+    width: 18%;
 }
 
 /*PÁGINA MEDALLA====================================================================================*/
