@@ -62,7 +62,7 @@
     align-items: center;
     gap: 7em;
     width: 70vw;
-    height: 60%;  
+    height: 55%;  
 }
 
 .carnets_oposito {   
@@ -101,7 +101,7 @@
 .identificacion,
 .cifras {     
     background: linear-gradient(
-    rgba(254, 133, 37, 1),
+    rgba(254, 133, 37, 0.6),
     rgba(254, 133, 37, 0.6)
     );
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 

@@ -151,10 +151,10 @@ i {
 }
 
 .arrow_down {
-    width: 3%;
+    width: 2.5%;
     position: absolute;
     left: 90%;
-    top: 80%;
+    top: 82%;
     opacity: 0;
     animation: aparecer 0s 2.5s forwards, baja 1s ease-in-out 2.5s infinite;
 }
