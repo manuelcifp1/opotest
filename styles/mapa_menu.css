@@ -52,7 +52,8 @@
 /* Menú dentro del contenedor */
 #contenedor_menu ul {
     list-style: none;
-    text-align: center;    
+    text-align: center;
+    margin:3px;    
 }
 
 .encabezado_menu {
@@ -79,11 +80,7 @@
 #contenedor_menu ul li {
     margin: 20px 0;
     font-family: "Lexend", sans-serif;
-    margin-bottom: 2em;        
-}
-
-#contenedor_menu ul{
-    margin:3px;
+    margin-bottom: 2em;            
 }
 
 #contenedor_menu ul li a {
@@ -98,7 +95,8 @@
     1px -1px 2px black,
     -1px -1px 2px black;
     border: transparent 2px solid;    
-    z-index: 100;    
+    z-index: 100;
+    padding: 5px;    
 }
 
 
