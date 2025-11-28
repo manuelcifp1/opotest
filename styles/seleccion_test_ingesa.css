@@ -120,19 +120,36 @@ input[type="radio"], input[type="checkbox"] {
 
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
-
+    
     fieldset[id="temas_personalizados_fieldset"] {
         width: 95%;
         overflow-x: hidden;
     }
+
+    .registrate {
+        border: 3px solid var(--azul_principal);
+    }
+
+    #formulario_test {
+        margin-top: 20%;
+    }
+
+    #formulario_test fieldset {
+        border: 3px solid var(--azul_principal);
+        border-radius: 2%;
+    }
+
+    #formulario_test select {
+        border: 3px solid var(--azul_principal);
+    }
     
     #formulario_test {
-        width: 85%;
-        
+        width: 85%;        
     }
 
     legend {
         font-size: 0.6em;
+        border: 3px solid var(--azul_principal);
     }
 
     .titulo_seleccion_test {
@@ -155,13 +172,17 @@ input[type="radio"], input[type="checkbox"] {
 
     .checkbox-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0.4em;
-        font-size: 0.72em; /* Opcional: ajusta si los textos se ven muy apretados */
+        grid-template-columns: repeat(4, 1fr);        
+        font-size: 0.70em; /* Opcional: ajusta si los textos se ven muy apretados */
+        
     }
 
-}
+    .radio-grid label {
+        font-size: 0.8em;
+        gap: 0.9em;
+    }  
 
+}
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)*/
 /* Ajustes específicos para portátiles modernos (el mío) */
