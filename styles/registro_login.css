@@ -191,7 +191,7 @@ label {
     }
 
     .logueate {
-        width: 50vw;
+        width: 50vw;        
     }
 
     .registrate {
@@ -204,6 +204,7 @@ label {
 
     input {
         width: 15em;
+        border: 2px solid var(--azul_principal);
     }
 
     .amor {
