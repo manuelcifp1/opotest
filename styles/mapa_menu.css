@@ -185,17 +185,17 @@
 }
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
+/* Ajustes específicos para portátiles modernos (el mío) */
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
-    .ceuta_melilla {
-        font-size: 1.5em;
+    .encabezado_menu {
+        font-size: 2.5em;
+        margin-top: 3%;        
     }
-
+    
     #contenedor_menu ul li a {
         font-size: 1.5em;
     }
 
-    .contenedor_listas {
-        margin-left: 18%;
-    }
+    
 }
 
