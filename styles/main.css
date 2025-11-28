@@ -1190,6 +1190,11 @@ footer::after {
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     /* Ajustes específicos para portátiles modernos (el mío) */
+
+    /*HEADER=============================================*/
+    .contenedor_icono_burger {
+        top: 26%;
+    }
     
     /*INDEX - SEGUNDA SECCIÓN==========================================*/
     .saludo {
@@ -1267,11 +1272,7 @@ footer::after {
         font-size: 1.5em;        
     }
 
-    /*PÁGINA MEDALLA=============================================*/
-    .entrega_de_premios {
-        margin-top: 0.15%;
-    }
-
+    /*PÁGINA MEDALLA=============================================*/    
     .boton_medalla {
         font-size: 1.4em;
     }
