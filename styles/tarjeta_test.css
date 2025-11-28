@@ -87,7 +87,12 @@
 
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
-    /* Oculta flechas en móvil */
+    
+    .zona_test {
+        height: 92vh;
+        margin-top: 5%;
+    }
+    
     .tarjeta_test {
         width: 90%;
         height: 90%;
@@ -95,6 +100,8 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .contenido_tarjeta input[type=]
 
     .tarjeta_test .nav-arrow {
         pointer-events: none;
