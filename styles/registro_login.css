@@ -170,8 +170,7 @@ input[type="submit"]:hover {
 
 .enlaceReg {
     font-size: 2em;
-    animation: cambio-color 1.5s infinite alternate;
-    
+    animation: cambio-color 1.5s infinite alternate;    
 }
 
 label {
