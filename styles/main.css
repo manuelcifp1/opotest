@@ -589,6 +589,7 @@ footer::after {
   .odd, .even {
     flex-direction: column;
     align-items: center;
+    gap: 5%;
   }
 
   .odd {
@@ -612,30 +613,34 @@ footer::after {
   .abajo {
     height: 33%;
     margin:0 auto;    
-  }  
+  }
+  
+  .arrow_down {
+    width: 8%;
+    left: 90%;
+  }
 
   /*Segunda sección*/
   .saludo {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
   }
 
   .logos {
-    height: 36%;
+    height: 28%;
     margin-top: 6em;
   }
 
   /*Tercera sección*/
-  .menuvideo {
-    margin: 0 auto;
-    margin-left: 0.8em;
-    margin-top: 7em;
-    width: 95%;
+  .menuvideo {       
+    width: 230%;    
+    margin-left: -65%;
   }
 
   .banderita {
     height: 50%;
-    margin: 0 auto;
+    width: 88%;
+    
   }
 
   /*Cuarta sección*/
@@ -646,8 +651,9 @@ footer::after {
   }
 
   .podium {
-    height: 100%;
-    margin: 0 auto;
+    height: 150%;
+    width: 90%;
+    margin-bottom: 13%;
   }
 
   /*Quinta sección*/
@@ -665,8 +671,9 @@ footer::after {
   }
 
   .informatico {
-    height: 48%;
-    margin-left: 6em;    
+    height: 50%;
+    width: 180%;
+    margin-left: 15%;    
   }
 
     /*Sexta sección*/
@@ -677,16 +684,17 @@ footer::after {
   }
 
   .adios {
-    height: 56%;    
+    height: 56%;
+    width: 100%;    
   }
 
   .star_register {
-    width: 58%;
+    width: 50%;
     margin-top: 3em;
   }
 
   .reg {
-    font-size: 1.5em;
+    font-size: 2em;
   } 
 
   /*Footer*/
@@ -718,6 +726,10 @@ footer::after {
   .reg_invitado {
     flex: 1;
     height: auto;
+  }
+
+  .star_register_invitado {
+    width: 60%;
   }
 
   /*PÁGINA FIN_TEST_SUSCRIPTOR===================================================*/
