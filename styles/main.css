@@ -1279,24 +1279,11 @@ footer::after {
     /*PÁGINA ADMIN=============================================*/
     #logoBlue {
         width: 11%;
-    }
+    }     
 
-    .sectionBlue {
-        height: 95vh;
-    }
+    
 
-    .burgerOrange {
-        top: 1.6em;
-    }
-
-    .aBlue {
-        width: 10%;
-        font-size: 1.3em;
-    }
-
-  .adminBlue {
-    font-size: 1em;
-  }
+  
 
     
 
