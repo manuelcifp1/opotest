@@ -188,6 +188,7 @@ input[type="radio"], input[type="checkbox"] {
 /* Ajustes específicos para portátiles modernos (el mío) */
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     .titulo_seleccion_test {
+        margin-top: 3%;
         font-size: 1.3em;
     }
 
@@ -198,6 +199,10 @@ input[type="radio"], input[type="checkbox"] {
     .formulario_test input[type="submit"] {
         font-size: 0.8em;
         text-align: center;
+    }
+
+    .radio-grid label {
+        font-size: 0.9em;
     }
 
     .checkbox-grid input[type="checkbox"] {
