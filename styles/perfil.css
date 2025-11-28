@@ -384,11 +384,7 @@
         height: 45vh;
         margin-bottom: 45px;
         margin-top: 30px;
-    } 
-    
-    .dos {
-        width: 35%;
-    }
+    }    
 
     .medallero {
         justify-content: center;
@@ -416,45 +412,46 @@
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
     
     .h1Perfil {
-        margin-top: 2em;
-        font-size: 1.5em;
-    }
-    
-    .carnets_oposito {
-        height: 34.8vh;
-        width: 64vw;
+        font-size: 1.3em;
+        right: 4%;
+        bottom: 32%;
     }    
 
-    .dos {
-        width: 28vw;
+    .cuadro {
+        height: 35vh;
     }
 
-    .cuadro {
-        margin-right: 5em;
+    .carnets_oposito {
+        height: 35vh;
+        width: 28vw;
+        
     }
 
     .cuadro p {
-        padding: 0.5em;                
-    }
+        font-size: 0.8em;                
+    } 
     
-    .cuadro h3 {
-        padding: 0.5em;
-    }
-
-    .carnet-img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;        
+    .stats {
+        bottom: 40%;
+        left: -2%;
     }
 
     .cifras {
-        gap: 3em;
-        width: 87vw;
+        width: 95vw;
         height: 95vh;
     }
 
+    .cuadroDos {
+        width: 30vw;
+    } 
+    
     .consulta_estadisticas {
-        margin-left: 4em;
+        margin-right: 5%;
+    }
+
+    .tituloMedal {
+        font-size: 1.3em;
+        bottom: 40vh;
     }
 
     .medallero {
@@ -466,27 +463,12 @@
     }
 
     .cuadro_medallas {
-        margin-top: 0;
-        margin-bottom: 13.6%;
-    }
-
-    .identificacion {
-        height: 95vh;
-    }
-
-    .estadisticas {
-        height: 95vh;
+        margin-bottom: 14%;
     }    
 
-    .medallero {
-        flex: 1 0 auto;
-        padding-bottom: 2vh; /* da un pequeño respiro visual si lo deseas */
-        margin-bottom: 0;
-    }
+       
 
-    .cuadro_medallas {
-        margin-bottom: 0; /* elimina el margen fijo previo */
-        padding-bottom: 1vh; /* opcional para separación visual suave */
-    }
+    
+    
 
 }
