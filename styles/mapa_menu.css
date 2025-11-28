@@ -111,21 +111,14 @@
 /*Teléfonos (hasta 480px)*/
 @media screen  and (max-width: 480px) {
 
-  .encabezado .titulo {
-    font-size: 2em;
-    margin-top: -7vh;
-  }
-
-  .encabezado {
-    margin-top: 1vh;
-  }
+  .titulo {
+    font-size: 2.4em;
+    margin-top: 1.7em;    
+  }  
 
   #contenedor_menu {
     transform: translateY(-100%);
-    width: 100%;    
-  }
-
-  #contenedor_menu {
+    width: 100%;
     height: 100vh;
     z-index: 100;    
   }
@@ -134,13 +127,8 @@
     display: none;
   }
 
-  .ceuta_melilla {
-    font-size: 1.3em;
-    padding-bottom: 1.5em;    
-  }
-
   #contenedor_menu ul li a {
-    font-size: 1.3em;        
+    font-size: 1.6em;        
   }
   
   #contenedor_menu ul li {
