@@ -1219,7 +1219,11 @@ footer::after {
     /*INDEX - SEXTA SECCIÓN*/
     .adios {
         width: 35%;          
-    }   
+    } 
+    
+    .star_register {
+        width: 20%;
+    }
 
     /*FOOTER======================================================*/
     .brands {
@@ -1243,7 +1247,7 @@ footer::after {
         height: 80vh;        
     }
 
-    .star_register {
+    .star_register_invitado {
         width: 23%;
     }
 
@@ -1259,10 +1263,8 @@ footer::after {
     }
     
     .resultados_test {
-        width: 25%;
-        height: 55%;
-        font-size: 1.5em;
-        padding: 0.5em;
+        width: 25%;        
+        font-size: 1.5em;        
     }
 
     /*PÁGINA MEDALLA=============================================*/
