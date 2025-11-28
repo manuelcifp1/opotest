@@ -197,7 +197,7 @@ i {
 }
 
 .banderita {
-    width: 27%;;    
+    width: 27%;    
 }
 
 .videoshow {
@@ -1189,61 +1189,44 @@ footer::after {
 
 /*Laptops grandes y escritorios (de 1200px a 1999px)==================================================*/
 @media screen and (min-width: 1200px) and (max-width: 1999px) {
-    /* Ajustes específicos para portátiles modernos (el mío) */   
-
-    /*HEADER==================================*/
-    .logo {
-        height: 7vh;
-        margin-left: 0.6em;        
-    }
+    /* Ajustes específicos para portátiles modernos (el mío) */
     
-    /*INDEX - PRIMERA SECCIÓN========================================*/    
-    .abajo {
-        margin-top: 27%;        
+    /*INDEX - SEGUNDA SECCIÓN==========================================*/
+    .saludo {
+        width: 35%;
     }
-
-    /*INDEX - SEGUNDA SECCIÓN============================================*/
-    
 
     /*INDEX - TERCERA SECCIÓN==========================================*/
-    .banderita {
-        height: 73%;
-        margin-right: 15%;
-    } 
-
-    .menuvideo {
-        margin-left: 25%;
-    }    
+    .banderita {        
+        width: 30%;
+    }  
 
     /*INDEX - CUARTA SECCIÓN==========================================*/
     .podium {
-        height: 82%;
+        width: 33%;
     }
 
     /*INDEX - QUINTA SECCIÓN===================================================*/
     .informatico {
-        height: 75%;
-        margin-left: 30%;
+        width: 68vw;
+        
     }
 
-    .videoai {
-        width: 5%;
-        margin-left: 13%;
+    .punetero {
+        width: 35vw;
     }
 
     /*INDEX - SEXTA SECCIÓN*/
     .adios {
-        height: 90%;
-    }
-
-    .parte_final {
-        margin-top: 0.3%;
-    }
+        width: 35%;          
+    }   
 
     /*FOOTER======================================================*/
     .brands {
-        gap: 0.1em;
+        gap: 0.8em;
         width: 10%;
+        font-size: 1.4em;
+        padding-top: 0.4em;
     }
 
     .fa-copyright {
