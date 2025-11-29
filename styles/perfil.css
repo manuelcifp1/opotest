@@ -272,57 +272,89 @@
 /*Tablets pequeñas (481px a 767px)*/
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     .h1Perfil {
-        font-size: 1.3em;
-        margin-bottom: 0.5em;
-        margin-top: 3em;
-    }
+    font-size: 1.2em;
+    bottom: -2%;
+    right: 2%;    
+  }
 
-    .datos {
-        justify-content: center;
-        align-items: center;                
-    }
+  .persona {
+    min-height: 100vh;
+  }
+  
+  .datos {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .identificacion, .cifras {
+    flex-direction: column;
+  }
 
-    .carnets_oposito {
-        margin-top: 0;
-    }
-    
-    .identificacion, .cifras {
-        flex-direction: column;
-    }  
+  .identificacion {
+    gap: 5em;
+  } 
 
-    .carnets_oposito {
-        height: 33vh;
-        width: 80vw;    
-    }
+  .cuadro {
+    width: 75%;
+    height: 22%;
+  }
 
-    .carnets_oposito img {
-        width: 100%;
-        height: auto;
-    }
+  .cuadro p {
+    font-size: 0.8em;
+  }
+  
+  .carnets_oposito {
+    height: 30%;
+    width: 75%;    
+  }
 
-    .consulta_estadisticas {
-        height: 30vh;
-        margin-top: -25vh;
-        margin-bottom: 8vh;        
-    } 
-    
-    .cuadroDos {
-        font-size: 0.6em;
-        height: 30vh;
-        width: 50vw;
-    }
+  .carnets_oposito img {
+    width: 100%;
+    height: auto;
+  }
+  /*Segunda sección*/
+  .stats {
+    bottom: 1%;
+  }
 
-    .medallero {
-        justify-content: center;        
-    }
+  .consulta_estadisticas {
+    height: 30vh;
+    margin-left: 15%;
+  } 
+  
+  .cuadroDos {
+    height: 19vh;
+    width: 60%;
+  }
+  .cuadroDos p {
+    font-size: 0.8em;
+  }
 
-    .medallero h1 {
-        margin-top: 0px;
-    }
+  /*Tercera sección*/
+  .medallero {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: visible;    
+  }
 
-    .cuadro_medallas {
-        width: 90vw;        
-    }    
+  .tituloMedal {
+    font-size: 1.2em;    
+  }
+
+  .cuadro_medallas {
+    width: 78vw;
+    grid-template-columns: repeat(4, 1fr);                
+  }
+
+  .cuadro p {
+    padding: 0.7em;
+  }
+  
+  .una_medalla {
+    width: 78%;        
+  }
 
 }
 
