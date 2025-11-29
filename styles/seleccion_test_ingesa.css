@@ -1,6 +1,6 @@
 /*PÁGINA SELECCION_TEST===================================================================*/
 .formulario_test {
-    min-height: 95vh;
+    min-height: 100vh;
     max-height: auto;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,10 @@
     background-image: url('img/fondo_mosaico_blanco.png');
     background-repeat: repeat;
     background-size: 100px;
+    overflow-y: auto; /*Permite el scroll al desplegar los checkboxes*/
+    padding-top: 60px; /*Espacio para el header fijo*/
+    padding-bottom: 80px; /*Espacio para el botón si es necesario*/
+    box-sizing: border-box;    
 }
 
 .titulo_seleccion_test {
