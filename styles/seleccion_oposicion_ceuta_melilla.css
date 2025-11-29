@@ -243,13 +243,8 @@ body.no-snap {
 
     .tarjetas_oposiciones {
         width: 50vw;
-    }
-
-    footer.foot {
-        position: static;
-        scroll-snap-align: none;
-        margin-top: 2em;
-    }
+        margin-bottom: 8%;
+    }    
 
 }
 
