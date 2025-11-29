@@ -967,24 +967,23 @@ footer::after {
     justify-content: center;
     align-items: center;
     height: 95vh;
-    gap: 1.9em;
+    gap: 3em;
     }
 
     .resultados {
-    height: 50%;
-    margin-left: 1.8em;
-    margin-top: 5em;
+    height: 50%;   
+    
     }
 
     .resultados_test {
     width: 60%;
     height: 20%;
-    font-size: 1.7em;
+    font-size: 1.5em;
     }
 
     .las_notas {
         flex-direction: column;
-        gap: 2.5em;
+        gap: 7em;
     }
 
     /*PÁGINA MEDALLA========================================================================*/
