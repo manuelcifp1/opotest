@@ -988,23 +988,24 @@ footer::after {
 
     /*PÁGINA MEDALLA========================================================================*/
     .toma_medalla {
-        flex-direction: column;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
     }
 
     .medallita {
-        height: 45vh;
-        margin-top: 15em;        
+        height: 45vh;                        
     }  
 
     .premio_gordo {
-        height: 50vh;
-        aspect-ratio: 1/1;
-        margin-top: 0%;    
+        width: 100%;
+        margin-top: 0%;
+        height: 35vh;
+            
     }
 
     .ventana_medalla {
-        height: 50%;
-        aspect-ratio: 1/1;
+        height: 70%;        
     }
 
     .boton_medalla {
@@ -1017,7 +1018,7 @@ footer::after {
     .entrega_de_premios {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;                
     }
 
     /*PÁGINA ADMIN===========================================*/
