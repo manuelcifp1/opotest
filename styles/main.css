@@ -819,7 +819,12 @@ footer::after {
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     /*HEADER=======================================================*/
     .logo {
-        width: 60%;
+        width: 20%;
+    }
+
+    .arrow_down {
+        width: 6%;
+        top: 83%;
     }
 
     /*PÁGINA INICIO================================================*/
@@ -829,88 +834,105 @@ footer::after {
     }
     
     .superlogo {
-        height: 30%;
+        height: 33%;
         margin-top: 10em;
     }
 
     .abajo {
         height: 30%;    
         margin-left: 50%;
-        margin-top: 50%;    
+        margin-top: 30%;    
     }
 
     .odd, .even {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: auto;
         flex: 1;
-        gap: 1em;
+        gap: 1em;        
     }
 
     .odd {
         flex-direction: column-reverse;
     }
 
+    .saludo {
+        width: 62%;
+        margin-bottom: 4em;
+    }
+
     .logos {
-        height: 33vh;
+        height: 30vh;
         margin-top: 6em;
     }
 
-    .saludo {
-        width: 70%;
-        margin: 0 auto;
+    .segunda_seccion {
+        gap: 2em;        
+    }
+    
+    .videoshow {
+        width: 78%;
     }
 
     .menuvideo {
-        margin: 0 auto;
-        margin-left: 0.8em;
-        margin-top: 7em;
-        width: 95%;
+        width: 100%;                
     }
 
     .banderita {
-        height: 50vh;
-        margin: 0 auto;
+        width: 60%;
+        margin-bottom: 8%;        
+    }
+    .tercera_seccion {
+        gap: 5em;
     }
 
-    .medallas {
-        margin-top: 6.5em;
-        margin-left: 7.5em;
-        width: 66vw;
+    .medallas {        
+        width: 60vw;
         aspect-ratio: 1/1;
     }
 
     .podium {
-        height: 50vh;
-        margin: 0 auto;
+        width: 60%;
+        margin-bottom: 10%;
     }
 
-    .videoai {        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 6.5em;    
+    .cuarta_seccion {
+        gap: 0%;
+    }
+
+    .videoai {
+        width: 65%;
+        margin-top: 7%;
+        margin-right: 13%;
+    }
+
+    .punetero {
+        width: 100%;
     }
 
     .informatico {
-        height: 50vh;
-        margin-left: 6em;    
+        width: 120%;
+        margin-bottom: 10%;    
+    }
+
+    .quinta_seccion {
+        gap: 4em;
     }
 
     .parte_final {
         flex-direction: column;
+        gap: 2em;        
     }
 
     .adios {
-        height: 50%;
+        width: 72%;
         margin: 0 auto;
     }
 
     .star_register {
-        width: 40%;
-        margin-top: 0em;
+        width: 35%;
+        margin-bottom: 2em;        
     }
 
     /*FOOTER=======================================================*/
@@ -930,7 +952,7 @@ footer::after {
         margin-top: 20%;
     }
 
-    .star_register {
+    .star_register_invitado {
         width: 43vw;
     }
     
