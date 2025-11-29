@@ -819,7 +819,7 @@ footer::after {
 @media screen  and (min-width: 481px) and (max-width: 767px) {
     /*HEADER=======================================================*/
     .logo {
-        width: 20%;
+        width: 60%;
     }
 
     /*PÁGINA INICIO================================================*/
