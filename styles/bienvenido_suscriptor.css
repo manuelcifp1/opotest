@@ -174,28 +174,19 @@
 
     .jubiloso {
         width: 37vh;
-        margin-left: 0em;
-        margin-top: 6em;
+        margin-top: 6%;        
     }
 
     .card-carousel {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .instrucciones {
         margin-right: 0em;
     }
 
-    .nav-arrow {
-        pointer-events: none;
-        opacity: 0.4;
-        cursor: default;
-    }
-
     .recien_llegado {
-        flex-direction: column;
-        margin-bottom: 0%;
-        gap: 0;
+        flex-direction: column;                
     }
 
 }
